@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>progress tracker</title><link rel="stylesheet" href="assets/base.css" /><script src="assets/gsap.min.js"></script><script src="cue.js"></script><script src="assets/boot.js"></script>
+<style>#tr{position:absolute;width:420px;border-radius:26px;background:rgba(20,26,24,.92);color:#fff;padding:18px 20px}
+#tt{font:800 28px/1 var(--font-head);letter-spacing:.03em;margin-bottom:12px;display:flex;gap:10px;align-items:center}#tt img{height:28px}
+.st{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:14px;margin-top:8px;background:rgba(255,255,255,.06);font:600 24px var(--font-body)}
+.st b{font:800 20px/1 var(--font-head);letter-spacing:.06em;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,.12)}
+.ok b{background:#3fbf7f;color:#04140c}.no b{background:#e5484d}.go b{background:var(--accent);color:var(--dark)}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-fps="30" data-width="1080" data-height="1920">
+<div id="stage" class="clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+<div id="tr" class="shadow"><div id="tt"><img id="lg" /><span id="ttx"></span></div><div id="list"></div></div>
+</div></div>
+<script src="assets/mg.js"></script>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = __DUR__, IN = T("in", 0.0), OUT = D - T("out_s", 0.35);
+const tr=document.getElementById("tr"); place(tr,{x:620,y:290});
+lg.src=T("icon","assets/logo.png"); ttx.textContent=T("title","");
+const steps=T("steps",[]), L=document.getElementById("list"), rows=steps.map((s,i)=>{const d=document.createElement("div"); d.className="st"; d.innerHTML="<span>"+s.name+"</span><b>"+(s.state||"QUEUED")+"</b>"; L.appendChild(d); return d;});
+tl.fromTo("#tr",{x:520,opacity:0},{x:0,opacity:1,duration:0.28,ease:"power3.out"},IN);
+T("events",[]).forEach(function(e){const d=rows[e.step]; if(!d) return; const b=d.querySelector("b");
+  tl.call(function(){b.textContent=e.label; d.className="st "+(e.state||"");},null,e.t);
+  tl.fromTo(d,{scale:1},{keyframes:[{scale:1.06,duration:0.08},{scale:1,duration:0.25,ease:"back.out(2)"}]},e.t);});
+tl.to("#tr",{x:520,opacity:0,duration:0.24,ease:"power3.in"},OUT);
+window.__timelines["main"] = tl;
+</script></body></html>

@@ -1,0 +1,9 @@
+{
+  "name": "cinematic-ads-harness",
+  "version": "1.0.0",
+  "description": "Product URL + concept in, finished cinematic video ad out. Agent-driven (Claude Code or Codex) with approval gates.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=20" },
+  "dependencies": { "@resvg/resvg-js": "^2.6.2" }
+}

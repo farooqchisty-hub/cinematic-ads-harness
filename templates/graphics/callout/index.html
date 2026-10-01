@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>screenshot callout</title><link rel="stylesheet" href="assets/base.css" /><script src="assets/gsap.min.js"></script><script src="cue.js"></script><script src="assets/boot.js"></script>
+<style>#f{position:absolute;width:880px;border-radius:30px;background:#fff;overflow:hidden}#bar{height:54px;background:#eceef0;display:flex;align-items:center;gap:10px;padding:0 22px}
+#bar i{width:16px;height:16px;border-radius:50%;background:#c9cdd1;display:block}#vp{position:relative;width:100%;overflow:hidden}#vp img{width:100%;display:block;transform-origin:0 0}
+#hl{position:absolute;border:6px solid var(--accent);border-radius:18px;box-shadow:0 0 0 2000px rgba(0,0,0,.35);opacity:0}#lb{position:absolute;padding:14px 22px;border-radius:16px;background:var(--accent);color:var(--dark);font:800 34px/1 var(--font-head);opacity:0}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-fps="30" data-width="1080" data-height="1920">
+<div id="stage" class="clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+<div id="f" class="shadow"><div id="bar"><i></i><i></i><i></i></div><div id="vp"><img id="sh" /><div id="hl"></div><div id="lb"></div></div></div>
+</div></div>
+<script src="assets/mg.js"></script>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = __DUR__, IN = T("in", 0.0), OUT = D - T("out_s", 0.35);
+const f=document.getElementById("f"); place(f,{x:100,y:420});
+sh.src=T("image",""); const vh=T("view_h",900); vp.style.height=vh+"px";
+const H=T("highlight",null), sc=880/T("image_w",1440);
+if(H){Object.assign(hl.style,{left:H.x*sc+"px",top:H.y*sc+"px",width:H.w*sc+"px",height:H.h*sc+"px"}); lb.textContent=T("label",""); lb.style.left=H.x*sc+"px"; lb.style.top=Math.max(0,H.y*sc-64)+"px";}
+tl.fromTo("#f",{y:1500},{y:0,duration:0.36,ease:"power3.out"},IN);
+if(H){tl.fromTo("#sh",{scale:1},{scale:T("zoom",1.25),x:-H.x*sc*(T("zoom",1.25)-1),y:-H.y*sc*(T("zoom",1.25)-1),duration:0.6,ease:"power2.inOut"},IN+0.4);
+tl.fromTo("#hl",{opacity:0,scale:1.15},{opacity:1,scale:1,duration:0.22,ease:"power2.out"},IN+0.5); tl.fromTo("#lb",{opacity:0,y:20},{opacity:1,y:0,duration:0.2},IN+0.6);}
+tl.to("#f",{y:1600,duration:0.28,ease:"power3.in"},OUT);
+window.__timelines["main"] = tl;
+</script></body></html>

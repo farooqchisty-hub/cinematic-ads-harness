@@ -1,0 +1,10 @@
+{
+ "prompt": "@image1 is the first frame of this shot.\nContinue this exact shot for 4 seconds, same camera, lens, height and grade as @image1: the camera tracks alongside both cars through a fast corner at night on the Port Aurelia street circuit. At about 1 second the rear of the green PushOwl Racing car no. 7 twitches out a few degrees with a burst of sparks and a short tyre squeal; the driver catches it with one quick flick of opposite lock and the car snaps straight again within half a second. Both cars stay pointed forward in the direction of travel the whole time; the green car keeps its nose just ahead of the orange Ember Racing car and both keep driving forward down the track.\nPHYSICS: real single-seater race-car physics. No spin, no turning around, no sliding sideways more than a few degrees, no reversing; no car ever faces the camera or changes direction; wheels stay on the track; no morphing, no flashes, no glitch frames.\nEvery logo stays exactly as in @image1; no other brands appear. SOUND: engines at full scream, tyre squeal, sparks, crowd; NO music and NO speech. No on-screen text, captions or subtitles.",
+ "duration": 4,
+ "image_with_roles": [
+  {
+   "url": "https://farooqchisty-hub.github.io/ad-intel-agent/vref/rb6/spin_start.jpg",
+   "role": "first_frame"
+  }
+ ]
+}

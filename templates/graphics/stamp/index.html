@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>kinetic stamp</title><link rel="stylesheet" href="assets/base.css" /><script src="assets/gsap.min.js"></script><script src="cue.js"></script><script src="assets/boot.js"></script>
+<style>#s{position:absolute;display:flex;flex-direction:column;gap:12px}.w{display:inline-block;padding:14px 26px;border-radius:14px;background:var(--dark);color:#fff;font:800 92px/0.95 var(--font-head);text-transform:uppercase;letter-spacing:.01em}
+.w.a{background:var(--accent);color:var(--dark)}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-fps="30" data-width="1080" data-height="1920">
+<div id="stage" class="clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+<div id="s"></div>
+</div></div>
+<script src="assets/mg.js"></script>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = __DUR__, IN = T("in", 0.0), OUT = D - T("out_s", 0.35);
+const s=document.getElementById("s"); place(s,{x:60,y:300});
+T("words",["DONE"]).forEach(function(w,i){const d=document.createElement("div"); d.className="w"+(i%2?" a":""); d.textContent=w; s.appendChild(d);
+  const t=IN+i*T("gap",0.35); tl.fromTo(d,{scale:2.2,rotation:-10,opacity:0},{scale:1,rotation:-3,opacity:1,duration:0.14,ease:"power3.in"},t); if(MG.shake) MG.shake(tl,"#s",t+0.14,{amp:9,frames:6,seed:3+i});});
+tl.to("#s",{opacity:0,y:-60,duration:0.22,ease:"power3.in"},OUT);
+window.__timelines["main"] = tl;
+</script></body></html>

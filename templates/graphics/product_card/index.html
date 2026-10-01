@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>product card</title><link rel="stylesheet" href="assets/base.css" /><script src="assets/gsap.min.js"></script><script src="cue.js"></script><script src="assets/boot.js"></script>
+<style>#c{position:absolute;width:640px;border-radius:40px;background:#fff;overflow:hidden}
+#im{width:100%;height:520px;background:var(--light);display:flex;align-items:center;justify-content:center;overflow:hidden}#im img{max-width:92%;max-height:92%;object-fit:contain}
+#bd{padding:30px 34px 36px}#nm{font:800 52px/1.02 var(--font-head);color:var(--ink);text-transform:uppercase}#ln{margin-top:10px;font-size:30px;color:#444}
+#pr{display:inline-block;margin-top:18px;padding:12px 24px;border-radius:999px;background:var(--primary);color:var(--on-primary);font:800 34px/1 var(--font-head)}
+#sheen{position:absolute;top:-60px;left:0;width:150px;height:1200px;transform:skewX(-18deg);background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.8),rgba(255,255,255,0))}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-fps="30" data-width="1080" data-height="1920">
+<div id="stage" class="clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+<div id="c" class="shadow"><div id="im"><img id="pimg" /></div><div id="bd"><div id="nm"></div><div id="ln"></div><div id="pr"></div></div><div id="sheen"></div></div>
+</div></div>
+<script src="assets/mg.js"></script>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = __DUR__, IN = T("in", 0.0), OUT = D - T("out_s", 0.35);
+const c=document.getElementById("c"); place(c,{x:220,y:1020});
+pimg.src=T("image",""); nm.textContent=T("name",""); ln.textContent=T("line",""); const p=T("price",null); if(p) pr.textContent=p; else pr.style.display="none";
+tl.fromTo("#c",{x:-900,rotation:-6},{x:0,rotation:0,duration:0.36,ease:"power3.out"},IN);
+tl.fromTo("#sheen",{x:-260},{x:900,duration:0.6,ease:"power2.inOut"},IN+0.4);
+tl.to("#c",{x:1200,rotation:6,duration:0.28,ease:"power3.in"},OUT);
+window.__timelines["main"] = tl;
+</script></body></html>

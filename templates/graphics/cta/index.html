@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>CTA stack</title><link rel="stylesheet" href="assets/base.css" /><script src="assets/gsap.min.js"></script><script src="cue.js"></script><script src="assets/boot.js"></script>
+<style>#c{position:absolute;display:flex;flex-direction:column;align-items:flex-start;gap:6px}.l{font:800 120px/0.86 var(--font-head);color:#fff;text-transform:uppercase;text-shadow:0 6px 30px rgba(0,0,0,.45)}
+.l.a{display:inline-block;padding:8px 22px;background:var(--accent);color:var(--dark);text-shadow:none;border-radius:10px}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-fps="30" data-width="1080" data-height="1920">
+<div id="stage" class="clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+<div id="c"></div>
+</div></div>
+<script src="assets/mg.js"></script>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = __DUR__, IN = T("in", 0.0), OUT = D - T("out_s", 0.35);
+const c=document.getElementById("c"); place(c,{x:40,y:1000});
+const ws=T("lines",["SIGN","UP","FREE"]); ws.forEach(function(w,i){const d=document.createElement("div"); d.className="l"+(i===ws.length-1?" a":""); d.textContent=w; c.appendChild(d);
+  tl.fromTo(d,{x:-700},{x:0,duration:0.24,ease:"power3.out"},IN+i*0.12);});
+tl.to("#c",{x:-900,duration:0.24,ease:"power3.in"},OUT);
+window.__timelines["main"] = tl;
+</script></body></html>

@@ -1,0 +1,496 @@
+{
+ "race": [
+  {
+   "src": "R11",
+   "in": 0.0,
+   "out": 23.0
+  },
+  {
+   "src": "SP2",
+   "in": 0.0,
+   "out": 2.375,
+   "audio_src": "R11",
+   "audio_in": 23.0
+  },
+  {
+   "src": "R11",
+   "in": 25.375,
+   "out": 30.0
+  },
+  {
+   "src": "R21",
+   "in": 0.0,
+   "out": 0.667
+  },
+  {
+   "src": "MC1",
+   "in": 1.55,
+   "out": 4.05
+  },
+  {
+   "src": "R21",
+   "in": 3.167,
+   "out": 20.0
+  },
+  {
+   "src": "E6",
+   "in": 0.0,
+   "out": 14.0
+  }
+ ],
+ "br": "BR1",
+ "segments": [
+  {
+   "t0": 0.0,
+   "t1": 8.46,
+   "layout": "full"
+  },
+  {
+   "t0": 8.46,
+   "t1": 21.4,
+   "layout": "split",
+   "bottom": [
+    {
+     "t0": 8.46,
+     "t1": 11.1,
+     "src_in": 0.0,
+     "y": 240
+    },
+    {
+     "t0": 11.1,
+     "t1": 14.6,
+     "src_in": 4.2,
+     "y": 240
+    },
+    {
+     "t0": 14.6,
+     "t1": 19.8,
+     "src_in": 9.3,
+     "y": 240
+    },
+    {
+     "t0": 19.8,
+     "t1": 21.4,
+     "src_in": 14.63,
+     "y": 240
+    }
+   ]
+  },
+  {
+   "t0": 21.4,
+   "t1": 33.167,
+   "layout": "full"
+  },
+  {
+   "t0": 33.167,
+   "t1": 41.0,
+   "layout": "split",
+   "bottom": [
+    {
+     "t0": 33.167,
+     "t1": 41.0,
+     "src_in": 20.22,
+     "y": 240
+    }
+   ]
+  },
+  {
+   "t0": 41.0,
+   "t1": 47.042,
+   "layout": "full"
+  },
+  {
+   "t0": 47.042,
+   "t1": 49.2545,
+   "layout": "full",
+   "rt0": 47.042,
+   "slow": 0.64
+  },
+  {
+   "t0": 49.2545,
+   "t1": 64.7965,
+   "layout": "full",
+   "rt0": 48.458
+  }
+ ],
+ "voc_moves": [
+  [
+   38.45,
+   39.22,
+   36.75
+  ],
+  [
+   36.62,
+   37.93,
+   40.0
+  ],
+  [
+   39.22,
+   40.82,
+   41.33
+  ],
+  [
+   41.6,
+   44.82,
+   42.97
+  ],
+  [
+   44.82,
+   47.52,
+   45.75
+  ],
+  [
+   48.65,
+   49.95,
+   49.45
+  ]
+ ],
+ "br_lines": [
+  [
+   1.7,
+   2.25,
+   10.16
+  ],
+  [
+   15.5,
+   15.9,
+   20.67
+  ],
+  [
+   24.8,
+   25.95,
+   37.74
+  ],
+  [
+   26.55,
+   27.05,
+   39.49
+  ]
+ ],
+ "captions": [
+  [
+   0.26,
+   3.3,
+   "Lap forty-one, and Vance is hunting Castell!"
+  ],
+  [
+   3.33,
+   6.22,
+   "Theo. Your store. Brenda just abandoned her cart."
+  ],
+  [
+   6.22,
+   8.4,
+   "Relax. It's on autopilot."
+  ],
+  [
+   8.48,
+   9.3,
+   "Push sent."
+  ],
+  [
+   10.16,
+   10.6,
+   "Later."
+  ],
+  [
+   11.89,
+   12.46,
+   "Dismissed."
+  ],
+  [
+   12.46,
+   14.76,
+   "Castell behind. Half a second."
+  ],
+  [
+   14.76,
+   15.48,
+   "Email's out."
+  ],
+  [
+   15.48,
+   17.62,
+   "Castell is all over the back of him!"
+  ],
+  [
+   17.66,
+   18.52,
+   "Email unopened."
+  ],
+  [
+   18.52,
+   19.32,
+   "Text her."
+  ],
+  [
+   19.32,
+   20.56,
+   "SMS going out."
+  ],
+  [
+   20.67,
+   21.05,
+   "Nope."
+  ],
+  [
+   21.27,
+   23.32,
+   "Side by side. Hold it. Hold it!"
+  ],
+  [
+   23.32,
+   25.1,
+   "Vance just about keeps it!"
+  ],
+  [
+   25.12,
+   27.1,
+   "Box, box, Theo. One last shot."
+  ],
+  [
+   27.14,
+   27.66,
+   "Copy."
+  ],
+  [
+   31.02,
+   32.77,
+   "Let's send a WhatsApp message. She'll bite."
+  ],
+  [
+   33.46,
+   36.6,
+   "Vance out of the pits, right on Castell's gearbox!"
+  ],
+  [
+   36.75,
+   37.52,
+   "Come on, Brenda."
+  ],
+  [
+   37.74,
+   38.89,
+   "Ten percent?"
+  ],
+  [
+   39.49,
+   39.99,
+   "Fine."
+  ],
+  [
+   40.0,
+   41.31,
+   "Inside's open. Go!"
+  ],
+  [
+   41.33,
+   42.93,
+   "She bought them! Order's in!"
+  ],
+  [
+   42.97,
+   45.72,
+   "Theo Vance wins the Port Aurelia Night Race!"
+  ],
+  [
+   45.75,
+   48.45,
+   "Congrats, Theo. You won the race. And the order."
+  ],
+  [
+   49.45,
+   50.75,
+   "Theo, what's your secret?"
+  ],
+  [
+   50.797,
+   57.647,
+   "My ecommerce store sells while I race. Thanks to PushOwl, the omnichannel marketing platform that works while I'm busy racing."
+  ],
+  [
+   57.697,
+   59.397,
+   "Sign up free on Shopify."
+  ],
+  [
+   59.497,
+   60.346,
+   "Who's Brenda?"
+  ],
+  [
+   60.497,
+   62.797,
+   "One more valuable customer PushOwl got me."
+  ]
+ ],
+ "cap_y": [
+  [
+   50.797,
+   64.796,
+   1560
+  ]
+ ],
+ "mg": [
+  {
+   "id": "M1v",
+   "t": 0.3,
+   "speed": 1.2,
+   "sounds": 0
+  },
+  {
+   "id": "M3",
+   "t": 4.9,
+   "speed": 1.25,
+   "sounds": 0
+  },
+  {
+   "id": "N1a",
+   "t": 6.9,
+   "speed": 1.4,
+   "sounds": 0
+  },
+  {
+   "id": "M4d",
+   "t": 8.6,
+   "speed": 1.0,
+   "y": 731,
+   "sounds": 0
+  },
+  {
+   "id": "N1b",
+   "t": 11.5,
+   "speed": 1.4,
+   "sounds": 0
+  },
+  {
+   "id": "N4",
+   "t": 13.82,
+   "speed": 1.25,
+   "sounds": 0
+  },
+  {
+   "id": "N3",
+   "t": 16.1,
+   "speed": 1.0,
+   "scale": 0.8,
+   "x": 110,
+   "y": 1435,
+   "sounds": 0
+  },
+  {
+   "id": "N5",
+   "t": 18.9,
+   "speed": 1.0,
+   "scale": 0.85,
+   "x": 150,
+   "y": 740,
+   "cut": 2.45,
+   "sounds": 0
+  },
+  {
+   "id": "N1c",
+   "t": 24.9,
+   "speed": 1.25,
+   "sounds": 0
+  },
+  {
+   "id": "N6",
+   "t": 34.0,
+   "speed": 1.1,
+   "scale": 0.8,
+   "x": 232,
+   "y": 1248,
+   "sounds": 0
+  },
+  {
+   "id": "M10",
+   "t": 39.9,
+   "speed": 1.25,
+   "sounds": 0
+  },
+  {
+   "id": "M9v",
+   "t": 42.0,
+   "speed": 1.25,
+   "sounds": 0
+  },
+  {
+   "id": "N1d",
+   "t": 43.4,
+   "speed": 1.4,
+   "sounds": 0
+  },
+  {
+   "id": "M17",
+   "t": 46.43,
+   "speed": 1.1,
+   "sounds": 0,
+   "scale": 0.75,
+   "x": 20,
+   "y": -109
+  },
+  {
+   "id": "M14v",
+   "t": 53.397,
+   "speed": 1.0,
+   "y": 700,
+   "sounds": 0
+  },
+  {
+   "id": "M18",
+   "t": 58.096,
+   "speed": 1.1,
+   "y": 700,
+   "sounds": 0
+  }
+ ],
+ "sfx": [
+  [
+   5.17,
+   "alert",
+   0.45
+  ],
+  [
+   9.02,
+   "pop",
+   0.5
+  ],
+  [
+   16.4,
+   "alert",
+   0.4
+  ],
+  [
+   19.35,
+   "pop",
+   0.5
+  ],
+  [
+   34.36,
+   "pop",
+   0.5
+  ],
+  [
+   42.24,
+   "chime",
+   0.55
+  ]
+ ],
+ "music": "music_v7.wav",
+ "music_gain": 0.5,
+ "outro": "outro_v2_9x16.mp4",
+ "music_env": [
+  [
+   50.797,
+   63.096,
+   0.6
+  ]
+ ],
+ "out": "race-brenda7a_generated",
+ "warp": {
+  "t0": 47.042,
+  "t1": 48.458,
+  "k": 0.64
+ }
+}

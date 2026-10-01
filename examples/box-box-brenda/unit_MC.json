@@ -1,0 +1,25 @@
+{
+ "prompt": "@image1 is the first frame of this shot; @image2 is Marcus Cole's face; @image3 is Theo Vance's face; @image4 is the PushOwl Racing garage and pit board. @audio1 is ONLY the voice of Marcus Cole: match his timbre, pitch and gravelly accent exactly; the words in the sample are not part of this film and are never spoken.\nContinue this exact shot for 4 seconds, same camera, lens and grade as @image1: the PushOwl Racing pit box during a pit stop at night. Marcus leans into the cockpit holding the tablet (its screen faces away from camera) and, starting at 0.2 seconds, says to Theo, low and conspiratorial with a knowing grin, at a brisk pace: \"Let's send a WhatsApp message. She'll bite.\" Theo, in the cockpit, gives one sharp nod. The crew works fast behind them.\nFaces, wardrobe and logos exactly as in the references. PHYSICS: people and objects keep one consistent state; the tablet never flips; no flashes or glitch frames.\nSOUND: pit-stop wheel guns and air tools, engine idle; NO music. The quoted line is spoken clearly, once, exactly as written, acted not read; nothing else is ever spoken. No on-screen text, captions or subtitles.",
+ "duration": 4,
+ "audio_urls": [
+  "https://farooqchisty-hub.github.io/ad-intel-agent/vref/rb6/marcus_r2.mp3"
+ ],
+ "image_with_roles": [
+  {
+   "url": "https://farooqchisty-hub.github.io/ad-intel-agent/vref/rb6/marcus_start.jpg",
+   "role": "first_frame"
+  },
+  {
+   "url": "https://cpma-agent.pages.dev/api/sb/race-brenda5/char_3_card.png",
+   "role": "reference_image"
+  },
+  {
+   "url": "https://cpma-agent.pages.dev/api/sb/race-brenda5/char_1_card.png",
+   "role": "reference_image"
+  },
+  {
+   "url": "https://cpma-agent.pages.dev/api/sb/race-brenda5/brand_pit.png",
+   "role": "reference_image"
+  }
+ ]
+}

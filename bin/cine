@@ -1,0 +1,149 @@
+#!/usr/bin/env python3
+"""Cinematic Ads Harness CLI. `cine help` for the commands. Run from any folder; runs live in ./runs/<slug>."""
+import json, os, re, subprocess, sys
+HERE = os.path.dirname(os.path.realpath(__file__))
+sys.path.insert(0, os.path.join(HERE, "..", "src"))
+from cine.util import Run, rj, wj, PKG
+from cine import intake, plan as PL, produce as PR, music as MU, graphics as GR, deliver as DL
+
+HELP = """Cinematic Ads Harness: product URL + concept in, finished cinematic video ad out.
+
+The two inputs: a product URL, and a concept (yours, or pick one of 5 the agent writes).
+
+  cine doctor [--run DIR] [--storage]       check tools, keys, treg sign-in and public storage (free)
+  cine new --url URL [--run DIR]            start a run folder (default runs/<domain>)
+  cine brief --run DIR [--product ..] [--audience ..] [--market ..] [--logo F] [--asset F]
+                                            read the page: brief, verified claims, brand kit (cents)
+  cine capture --run DIR [--n 16]           real screenshots and assets from the page, for graphics (free)
+  cine claims --run DIR                     list candidate claims (each quoted from the page)
+  cine claims --run DIR --approve c1,c2|all [--reject c3] [--add "4.8 stars: rated 4.8" --source URL]
+  cine concepts --run DIR                   render concepts.json (5 concepts) to concepts.html
+  cine concept --run DIR --pick N | --text "..." | --file concept.md
+  cine validate --run DIR                   rule-check plan.json (claims, quoting, brands, pacing)
+  cine storyboard --run DIR [--only k1,k2] [--force]
+                                            render cast cards, sheets, brand boards, keyframes; sheet + page
+  cine graphics --run DIR [--only G1,G2]    render graphics.json through HyperFrames templates (free)
+  cine takes --run DIR --unit R1 [--n 2] [--start 1]     generate takes via treg (paid)
+  cine resume --run DIR --take R12          re-attach to a submitted take after a crash
+  cine qa --run DIR --take R11 [...]        transcripts (full mix + vocal stem), cuts, contact sheet
+  cine stems --run DIR --take R11 [--at 12.0 15.0]       vocal stem; loudness per 0.1 s in a window
+  cine vref --run DIR --take R11 --at 1.3 4.9 --name dana   voice-reference clip from a take
+  cine voices --run DIR --clips clips.json  speaker check across takes ([[label, take, t0, t1], ...])
+  cine cuts FILE                            hard cuts by frame differencing
+  cine music --run DIR [--spec music.json]  compose the score in sections and stitch it to cuts
+  cine onset FILE                           where a music slam lands (to align it to a cut)
+  cine assemble --run DIR [--edit edit.json] [--rebuild]
+  cine deliver --run DIR --final out/NAME.mp4 --takes R11,BR1 --music A,B,C --art 12.3,40.1 --title ".." --logline ".."
+  cine status --run DIR
+"""
+
+
+def args(a):
+    o, pos, i = {}, [], 0
+    while i < len(a):
+        if a[i].startswith("--"):
+            k = a[i][2:]
+            vals = []
+            while i + 1 < len(a) and not a[i + 1].startswith("--"):
+                vals.append(a[i + 1]); i += 1
+            o[k] = vals[0] if len(vals) == 1 else (vals or True)
+        else:
+            pos.append(a[i])
+        i += 1
+    return o, pos
+
+
+def main():
+    if len(sys.argv) < 2 or sys.argv[1] in ("help", "-h", "--help"):
+        print(HELP); return
+    cmd, (o, pos) = sys.argv[1], args(sys.argv[2:])
+    run = Run(o["run"]) if isinstance(o.get("run"), str) else None
+    need = lambda: run or sys.exit("--run DIR is required (cine new --url URL creates one)")
+    lst = lambda k: [x for x in str(o.get(k, "")).split(",") if x] if isinstance(o.get(k), str) else (o.get(k) or [])
+    if cmd == "doctor":
+        sys.exit(0 if intake.doctor(run, storage_test=bool(o.get("storage"))) else 1)
+    if cmd == "new":
+        slug = re.sub(r"[^a-z0-9]+", "-", re.sub(r"^https?://(www\.)?", "", o["url"]).split("/")[0].lower()).strip("-")
+        run = Run(o.get("run") or os.path.join("runs", slug))
+        run.set(url=o["url"], stage="new")
+        print(run.dir); return
+    if cmd == "brief":
+        extra = []
+        for k in ("product", "audience", "market", "logo", "competitors", "page-text", "font-display", "font-body"):
+            if isinstance(o.get(k), str):
+                extra += [f"--{k}", o[k]]
+        for f in ([o["asset"]] if isinstance(o.get("asset"), str) else o.get("asset") or []):
+            extra += ["--asset", f]
+        intake.brief(need(), o.get("url") or need().state["url"], extra)
+        intake.claims_init(run); intake.claims_show(run); return
+    if cmd == "capture":
+        intake.capture(need(), o.get("url") or need().state["url"], int(o.get("n", 16))); return
+    if cmd == "claims":
+        need()
+        if not os.path.exists(run.p("claims.json")):
+            intake.claims_init(run)
+        if o.get("approve") or o.get("reject") or o.get("add"):
+            intake.claims_set(run, lst("approve"), lst("reject"), o.get("add"), o.get("source"))
+        intake.claims_show(run); return
+    if cmd == "concepts":
+        print(PL.concepts_page(need())); return
+    if cmd == "concept":
+        c = PL.concept_pick(need(), n=o.get("pick"), text=o.get("text") if isinstance(o.get("text"), str) else None, file=o.get("file"))
+        print(json.dumps(c, indent=1)[:1500]); return
+    if cmd == "validate":
+        r = PL.validate(need())
+        print(json.dumps(r, indent=1)); sys.exit(0 if not r["issues"] else 1)
+    if cmd == "storyboard":
+        need()
+        r = PL.validate(run)
+        if r["issues"] and not o.get("force-plan"):
+            print(json.dumps(r["issues"], indent=1)); sys.exit("fix the plan first (cine validate), or pass --force-plan")
+        PL.render_assets(run, only=lst("only") or None, force=bool(o.get("force")))
+        print(PL.contact_sheet(run)); print(PL.storyboard_page(run)); run.set(stage="storyboard"); return
+    if cmd == "graphics":
+        print(GR.render(need(), only=lst("only") or None)); return
+    if cmd == "takes":
+        PR.takes(need(), o["unit"], int(o.get("n", 2)), int(o.get("start", 1))); return
+    if cmd == "resume":
+        PR.resume(need(), o["take"]); return
+    if cmd == "qa":
+        for t in ([o["take"]] if isinstance(o["take"], str) else o["take"]):
+            PR.qa(need(), t)
+        return
+    if cmd == "stems":
+        voc, amb = PR.stems(need(), o["take"]); print(voc, amb)
+        if isinstance(o.get("at"), list):
+            print(" ".join(f"{t:.1f}:{v}" for t, v in PR.loudness(voc, float(o["at"][0]), float(o["at"][1]))))
+        return
+    if cmd == "vref":
+        print(PR.vref(need(), o["take"], o["at"][0], o["at"][1], o["name"])); return
+    if cmd == "voices":
+        PR.voices(need(), json.load(open(o["clips"]))); return
+    if cmd == "cuts":
+        print(" ".join(f"{c:.3f}" for c in PR.cuts(pos[0]))); return
+    if cmd == "music":
+        MU.compose(need(), o.get("spec", "music.json")); return
+    if cmd == "onset":
+        print(MU.onset(pos[0])); return
+    if cmd == "assemble":
+        edit = need().p(o.get("edit", "edit.json"))
+        r = subprocess.run([sys.executable, os.path.join(PKG, "src", "cine", "assemble.py"), edit] + (["--rebuild"] if o.get("rebuild") else []))
+        sys.exit(r.returncode)
+    if cmd == "deliver":
+        need()
+        final = run.p(o["final"])
+        run.set(final=final, stage="delivered")
+        print(DL.share_copy(run, final)); print(DL.final_sheet(run, final, o.get("title", "")))
+        if o.get("art"):
+            print(DL.concept_art(run, [float(x) for x in str(o["art"]).split(",")], o.get("title", ""), o.get("logline", ""), lst("chips"),
+                                 clean=run.p(o["clean"]) if o.get("clean") else None))
+        print(json.dumps(DL.costs(run, lst("takes"), lst("music")), indent=1)); return
+    if cmd == "status":
+        print(json.dumps(need().state, indent=1))
+        rows = rj(run.p("ledger.json"), [])
+        print(f"spend so far: ${sum(r['usd'] for r in rows):.2f} ({len(rows)} paid calls)"); return
+    print(HELP); sys.exit(2)
+
+
+if __name__ == "__main__":
+    main()

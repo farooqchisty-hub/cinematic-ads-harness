@@ -1,0 +1,9 @@
+/* Every graphic renders on a transparent 1080x1920 canvas. Brand tokens arrive from cue.js (the brand kit). */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { margin: 0; overflow: hidden; background: transparent; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: transparent;
+  font-family: var(--font-body), Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; color: var(--ink); }
+.abs { position: absolute; }
+.head { font-family: var(--font-head), var(--font-body), system-ui, sans-serif; }
+.tab { font-variant-numeric: tabular-nums; }
+.shadow { box-shadow: 0 22px 60px rgba(0,0,0,.28), 0 0 0 1px rgba(0,0,0,.05); }

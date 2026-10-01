@@ -1,0 +1,24 @@
+# Traps (each one happened)
+
+- **Faces refused on Replicate/fal Seedance (E005).** Use treg's reAPI `doubao-seedance-2.5-face` route.
+- **References must be public https links that return raw media bytes.** A file-page host, an HTML error page, or an image served with the wrong content-type fails the task (unbilled, with a generic upstream error). `cine doctor --storage` checks this.
+- **A first frame can't be mixed with reference images** (reAPI error 20003), and needs size adaptive. `cine takes` handles it for insert units.
+- **Save task ids before polling.** `seq/tasks.txt` + `cine resume` recover a take after a crash. Transient poll errors are normal.
+- **Stage directions get spoken.** Delivery notes as adjectives only.
+- **Long takes mispronounce brand words** about 3 times in 4. Put brand lines in short units with several takes.
+- **The model re-times your plan.** Read real cuts and line times from the take; never edit from the plan's numbers.
+- **Real brands leak** (a delivery-company banner appeared twice). Scan every frame; a split-screen crop can hide one at the frame edge.
+- **Physics fails on fast action** (a car spun 180 degrees). Fix with a 4 s first-frame insert from the last good frame, or a cutaway.
+- **Whisper invents words** in silences and breaths, and stamps the first word after a silence early.
+- **Text-to-music ignores timecodes** in one long prompt; compose sections and stitch.
+- **Music baked into separate takes restarts at every join.** Generate takes with no music.
+- **Decoration sounds read as beeps.** Graphics are silent unless the event must register.
+- **A sound on a brand word masks it.**
+- **Re-spacing lines can squeeze a natural pause to nothing.** Keep about a second between speakers; buy time with a slowed beat.
+- **A time warp must move picture, ambience and voice together**, or everything after it drifts and the original line leaks back in.
+- **Segments must be exact frame counts**, or the picture drifts a frame per segment from the sound.
+- **An overlay onto a colour source leaves a black first frame**; the assembler pads the top band instead.
+- **Moving a graphic to a new time can put it over a face.** Re-check placement after every retime.
+- **Numbers must agree across graphics** (a card said the pre-discount price while the toast showed the discounted one).
+- **Diarization merges men.** Report it as inconclusive.
+- **Music licence:** confirm the commercial-use terms of the music model before paid media.

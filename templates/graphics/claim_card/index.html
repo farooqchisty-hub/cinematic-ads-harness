@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>claim card</title><link rel="stylesheet" href="assets/base.css" /><script src="assets/gsap.min.js"></script><script src="cue.js"></script><script src="assets/boot.js"></script>
+<style>#k{position:absolute;padding:34px 44px;border-radius:36px;background:var(--dark);color:#fff}
+#n{font:800 190px/0.9 var(--font-head);color:var(--accent)}#cp{margin-top:10px;font:600 40px/1.15 var(--font-body);max-width:640px}#src{margin-top:14px;font-size:22px;opacity:.65}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-fps="30" data-width="1080" data-height="1920">
+<div id="stage" class="clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+<div id="k" class="shadow"><div id="n" class="tab"></div><div id="cp"></div><div id="src"></div></div>
+</div></div>
+<script src="assets/mg.js"></script>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = __DUR__, IN = T("in", 0.0), OUT = D - T("out_s", 0.35);
+const k=document.getElementById("k"); place(k,{x:90,y:360});
+const fig=String(T("figure","")); cp.textContent=T("caption",""); src.textContent=T("source","");
+const m=fig.match(/^(\D*)([\d,.]+)(.*)$/); const el=document.getElementById("n");
+if(m && MG.count){const to=parseFloat(m[2].replace(/,/g,"")), dec=(m[2].split(".")[1]||"").length; MG.count(tl,el,0,to,IN+0.2,0.7,(v)=>m[1]+v.toLocaleString("en-US",{minimumFractionDigits:dec,maximumFractionDigits:dec})+m[3],"power2.out");} else el.textContent=fig;
+tl.fromTo("#k",{scale:.6,opacity:0,transformOrigin:"0% 50%"},{scale:1,opacity:1,duration:0.3,ease:"back.out(2)"},IN);
+tl.to("#k",{x:-900,duration:0.26,ease:"power3.in"},OUT);
+window.__timelines["main"] = tl;
+</script></body></html>

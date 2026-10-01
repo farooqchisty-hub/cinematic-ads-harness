@@ -1,0 +1,1863 @@
+{
+ "version": 4,
+ "mode": "sequence",
+ "aspect": "9:16",
+ "title": "Box, Box, Brenda (68 s, split-screen multichannel thriller)",
+ "logline": "Theo is leading the night race and Brenda has abandoned her cart: PushOwl chases her through push, email and SMS while a rival chases him, and a WhatsApp discount wins her back as he takes the flag.",
+ "joke": "The stakes are 300 km/h and a championship, and the team radio is about one customer's cart; PushOwl closes the sale faster than the race ends.",
+ "angle": "PushOwl is a multichannel retention platform: web push, email, SMS and WhatsApp work together, automatically, until the order comes back.",
+ "story": {
+  "hook": "300 km/h, the commentator calls the hunt, and Dana's first call is about Theo's candle store: Brenda just abandoned her cart.",
+  "setup": "Theo: it's on autopilot. A web push lands; Brenda flicks it away (Later.).",
+  "build": "Split screen: the email goes unopened, the SMS gets a Nope., while Castell closes to half a second and draws alongside.",
+  "turn": "Box, box. At the pit stop Marcus says: Let's send a WhatsApp message. She'll bite.",
+  "payoff": "Ten percent? Fine. Brenda orders as Theo overtakes and wins: the race and the order.",
+  "cta": "My ecommerce store sells while I race. Thanks to PushOwl, the omnichannel marketing platform that works while I'm busy racing. Sign up free on Shopify.",
+  "button": "Who's Brenda? One more valuable customer PushOwl got me. Brenda lights the candle."
+ },
+ "look": {
+  "camera": "ARRI Alexa 35",
+  "lenses": "Zeiss Supreme Primes; long lens for track, wide prime onboard and interiors",
+  "stock": "Kodak Vision3 500T, slightly pushed",
+  "grade": "rich night blacks, sodium and LED floodlight, forest green and cream held clean, mint as a hot accent",
+  "notes": "broadcast motorsport realism: dense branded world, sponsor boards, crowd lights, tyre smoke in beams"
+ },
+ "style": "Ultra-real night motorsport broadcast and documentary, dense fictional sponsorship everywhere",
+ "grade": "rich night blacks, warm sodium against cool LED floodlight, forest green and cream clean, mint accents",
+ "music": {
+  "genre": "original ElevenLabs score in 3 sections: electronic chase build, sport-action drive, warm close",
+  "bpm": 128,
+  "notes": "chase build with a breakdown to near silence before the pit stop, slams into the drive on the pit-stop cut, lifts on the flag, warm close whose button lands just before the outro and carries through it; ducked under all dialogue, 0.6 under the CTA"
+ },
+ "sound": {
+  "native": "all dialogue, engines, crowd, radio texture and Brenda's room come from the generations (no music in any generation)",
+  "added": "only the six notifications the audience must register: cart alert, web push, email, SMS, WhatsApp, Shopify order chime; graphics and wipes are silent",
+  "split": "race ambience ducked to 0.35 in the split screens, Brenda's room at 0.35, all dialogue at full level"
+ },
+ "world": {
+  "series": "Meridian Series",
+  "race": "Port Aurelia Night Race",
+  "team": "PushOwl Racing",
+  "car_number": 7,
+  "driver_code": "VAN",
+  "store": "Burnt Rubber Candle Co."
+ },
+ "assets": [
+  {
+   "id": "char_1",
+   "type": "character",
+   "importance": "lead",
+   "name": "Theo Vance",
+   "role": "Driver, PushOwl Racing, owner of a one man candle shop on Shopify",
+   "id_block": "33 years old, lean athletic build, angular jaw with a faint scar above the left eyebrow, short dark brown hair often damp with sweat, olive skin tone, calm brown eyes",
+   "description": "Theo Vance, the hero driver",
+   "wardrobe": {
+    "S1": "PushOwl Racing race suit in forest green with cream shoulder panels and a mint stripe, sponsor patches exactly as on the livery board, matching helmet with PushOwl logo on the crown, visor down",
+    "S3": "same race suit and helmet, visor down",
+    "S4": "same race suit and helmet, visor up in the pit box",
+    "S5": "same race suit and helmet, visor down",
+    "S7": "race suit unzipped to the waist over a cream team undershirt with a small PushOwl logo, helmet off, hair damp, winner's cap",
+    "S8": "race suit half open over the cream team undershirt, PushOwl Racing cap, seated at the press table"
+   },
+   "states": {
+    "S7": "champagne soaked across the chest, hair matted",
+    "S8": "slightly damp, calm"
+   },
+   "expressions": [
+    "deadpan",
+    "quietly confident",
+    "delighted"
+   ],
+   "voice": "light transatlantic accent, mid pitch, dry and unbothered",
+   "brands": [
+    "brand_livery"
+   ]
+  },
+  {
+   "id": "char_2",
+   "type": "character",
+   "importance": "support",
+   "name": "Dana Reyes",
+   "role": "Race engineer, PushOwl Racing",
+   "id_block": "41 years old, athletic build, oval face, warm olive-tan skin, Latina American, dark brown hair pulled into a tight low bun, thin black-framed glasses, dark brown eyes, a small silver stud earring",
+   "description": "Dana Reyes, the race engineer",
+   "wardrobe": {
+    "S2": "forest green PushOwl Racing team polo with cream collar and small sponsor logos, headset with boom mic, tablet in hand"
+   },
+   "states": {},
+   "expressions": [
+    "focused",
+    "dry"
+   ],
+   "voice": "crisp American accent, alto, brisk and dry",
+   "brands": [
+    "brand_pit"
+   ]
+  },
+  {
+   "id": "char_3",
+   "type": "character",
+   "importance": "support",
+   "name": "Marcus Cole",
+   "role": "Chief mechanic, PushOwl Racing",
+   "id_block": "47 years old, stocky build, square jaw, grey stubble beard, receding grey hair cut short, pale weathered skin tone, deep set eyes",
+   "description": "Marcus Cole, chief mechanic",
+   "wardrobe": {
+    "S4": "PushOwl Racing crew fire suit in forest green with mint trim and sponsor patches, crew helmet pushed up, holding a rugged tablet"
+   },
+   "states": {
+    "S4": "calm, unhurried"
+   },
+   "expressions": [
+    "matter of fact",
+    "faint pride"
+   ],
+   "voice": "gravelly low, unhurried, states things like the weather",
+   "brands": [
+    "brand_pit",
+    "brand_livery"
+   ]
+  },
+  {
+   "id": "char_4",
+   "type": "character",
+   "importance": "extra",
+   "name": "Journalist A",
+   "role": "Press room reporter",
+   "id_block": "29 years old, slim build, oval face, curly red hair, freckled fair skin tone",
+   "description": "Journalist A",
+   "wardrobe": {
+    "S8": "navy blazer, Meridian Series press lanyard, holding a microphone with a Meridian Series mic flag"
+   },
+   "states": {},
+   "expressions": [
+    "eager"
+   ],
+   "voice": "neutral accent, bright, quick"
+  },
+  {
+   "id": "char_5",
+   "type": "character",
+   "importance": "extra",
+   "name": "Journalist B",
+   "role": "Press room reporter",
+   "id_block": "52 years old, heavier build, jowly face, bald head, tan weathered skin tone",
+   "description": "Journalist B",
+   "wardrobe": {
+    "S8": "rumpled shirt, press lanyard, notepad"
+   },
+   "states": {},
+   "expressions": [
+    "skeptical"
+   ],
+   "voice": "gravel low, slow, skeptical"
+  },
+  {
+   "id": "loc_onboard",
+   "type": "location",
+   "name": "Onboard, PushOwl Racing car",
+   "description": "cockpit of the PushOwl Racing open-wheel car at night on the Port Aurelia street circuit: halo bar, carbon steering wheel with a small glowing display, floodlit concrete towers and palms streaking past, sponsor boards on the barriers",
+   "time_of_day": "night",
+   "key_light": "cool 5600K LED floodlight from above and behind, warm sodium streaks passing across the visor",
+   "weather": "dry, warm haze",
+   "brands": [
+    "brand_trackside",
+    "brand_livery"
+   ]
+  },
+  {
+   "id": "loc_pitwall",
+   "type": "location",
+   "name": "PushOwl Racing pit wall",
+   "description": "the team's pit wall gantry above the pit lane: branded PushOwl Racing canopy, timing monitors with abstract graphs, engineers in headsets, track and grandstand lights beyond",
+   "time_of_day": "night",
+   "key_light": "monitor glow on faces, cool floodlight behind",
+   "weather": "dry",
+   "brands": [
+    "brand_pit"
+   ]
+  },
+  {
+   "id": "loc_track",
+   "type": "location",
+   "name": "Port Aurelia street circuit",
+   "description": "floodlit street circuit through a desert coastal city: concrete towers, palms, grandstands full of phone lights, barrier advertising boards and a start-finish gantry with the five start lights",
+   "time_of_day": "night",
+   "key_light": "hard cool floodlights, warm city glow on the horizon",
+   "weather": "dry, tyre smoke in the beams",
+   "brands": [
+    "brand_trackside"
+   ]
+  },
+  {
+   "id": "loc_pitlane",
+   "type": "location",
+   "name": "PushOwl Racing pit box",
+   "description": "PushOwl Racing garage and pit box: branded back wall, tyre warmers, wheel guns, pit board, crew in branded fire suits",
+   "time_of_day": "night",
+   "key_light": "bright overhead garage LEDs, cool pit lane floodlight",
+   "weather": "dry",
+   "brands": [
+    "brand_pit"
+   ]
+  },
+  {
+   "id": "loc_podium",
+   "type": "location",
+   "name": "Podium",
+   "description": "podium above the pit straight with Meridian Series and Port Aurelia Night Race branding, confetti, champagne mist in the floodlights, crowd below",
+   "time_of_day": "night",
+   "key_light": "hard white stage lights, green and cream LED wash",
+   "weather": "confetti",
+   "brands": [
+    "brand_podium"
+   ]
+  },
+  {
+   "id": "loc_press",
+   "type": "location",
+   "name": "Press conference room",
+   "description": "post-race press conference: step-and-repeat backdrop of Meridian Series, Port Aurelia Night Race, PushOwl Racing and sponsor logos, a branded table front, sponsor drink bottles on the table, three branded mic flags, rows of journalists and camera flashes",
+   "time_of_day": "night",
+   "key_light": "soft key from front left, flash pops, warm practicals",
+   "weather": "",
+   "brands": [
+    "brand_press"
+   ]
+  },
+  {
+   "id": "veh_1",
+   "type": "vehicle",
+   "name": "PushOwl Racing car no. 7",
+   "description": "modern open-wheel single seater with halo, PushOwl Racing livery",
+   "livery": "forest green #006A43 body, cream #FAF5E3 nose, mint #C0FFA5 stripe, PushOwl logo on the sidepod and nose, number 7, sponsor logos on the wing endplates exactly as on the livery board",
+   "brands": [
+    "brand_livery"
+   ]
+  },
+  {
+   "id": "veh_2",
+   "type": "vehicle",
+   "name": "Rival car, orange team",
+   "description": "open-wheel single seater in the orange rival team's livery",
+   "livery": "bright orange #FF6B1A and charcoal Ember Racing livery with the Ember Racing logo on the sidepods, number 11",
+   "brands": [
+    "brand_rivals"
+   ]
+  },
+  {
+   "id": "brand_livery",
+   "type": "brand",
+   "name": "PushOwl Racing livery, suit and helmet board"
+  },
+  {
+   "id": "brand_press",
+   "type": "brand",
+   "name": "press conference step-and-repeat board"
+  },
+  {
+   "id": "brand_podium",
+   "type": "brand",
+   "name": "podium board"
+  },
+  {
+   "id": "brand_pit",
+   "type": "brand",
+   "name": "PushOwl Racing garage and pit board"
+  },
+  {
+   "id": "brand_trackside",
+   "type": "brand",
+   "name": "trackside barrier, grandstand and gantry board"
+  },
+  {
+   "id": "brand_rivals",
+   "type": "brand",
+   "name": "Ember Racing (orange rival) logo"
+  },
+  {
+   "id": "char_6",
+   "type": "character",
+   "importance": "lead",
+   "name": "Brenda",
+   "role": "Customer of Burnt Rubber Candle Co., at home on a rainy night",
+   "id_block": "34 years old, petite build, heart-shaped face, a light dusting of freckles across the nose, shoulder-length wavy auburn hair held in a loose claw clip, fair skin with a warm undertone, hazel eyes",
+   "description": "Brenda, the customer",
+   "wardrobe": {
+    "S10": "oversized cream cable-knit cardigan over a soft grey t-shirt, loose charcoal lounge trousers, thick wool socks"
+   },
+   "states": {
+    "S10": "relaxed, unbothered, a little bored"
+   },
+   "expressions": [
+    "unbothered",
+    "wry smirk",
+    "delighted"
+   ],
+   "voice": "no lines",
+   "brands": [
+    "brand_candles"
+   ]
+  },
+  {
+   "id": "loc_brenda",
+   "type": "location",
+   "name": "Brenda's apartment",
+   "description": "a small warm city apartment at night: rain streaking a tall window with blurred city lights, a deep sofa with a throw blanket, a low wooden coffee table with a laptop and a mug, an open-plan kitchen island in pale stone with a wine glass, a bookshelf, and three Burnt Rubber Candle Co. candles on a shelf",
+   "time_of_day": "night, rain",
+   "key_light": "warm 2700K table lamp from the left, cool blue city spill through the window from the right, phone and laptop screens adding a soft glow on her face",
+   "weather": "rain on the window",
+   "brands": [
+    "brand_candles"
+   ]
+  },
+  {
+   "id": "brand_candles",
+   "type": "brand",
+   "name": "Burnt Rubber Candle Co. candle and label board"
+  },
+  {
+   "id": "char_7",
+   "type": "character",
+   "importance": "voice",
+   "name": "Spotter",
+   "role": "Team spotter on the radio (voice only)",
+   "voice": "American male, clipped tenor, calm and precise",
+   "states": {},
+   "expressions": []
+  },
+  {
+   "id": "char_8",
+   "type": "character",
+   "importance": "voice",
+   "name": "TV commentator",
+   "role": "Meridian Series broadcast commentator (voice only)",
+   "voice": "American male, big broadcast baritone, fast and excited",
+   "states": {},
+   "expressions": []
+  }
+ ],
+ "scenes": [
+  {
+   "id": "S1",
+   "beat": "hook",
+   "slug": "INT. PUSHOWL RACING CAR, PORT AURELIA CIRCUIT - NIGHT",
+   "location": "loc_onboard",
+   "characters": [
+    "char_1"
+   ],
+   "action": "Onboard at full speed, sparks off the floor; the engineer's voice crackles in."
+  },
+  {
+   "id": "S2",
+   "beat": "hook",
+   "slug": "EXT. PUSHOWL RACING PIT WALL - NIGHT",
+   "location": "loc_pitwall",
+   "characters": [
+    "char_2"
+   ],
+   "action": "Dana at the pit wall, eyes on the timing screens, keys her headset."
+  },
+  {
+   "id": "S3",
+   "beat": "setup",
+   "slug": "EXT. PORT AURELIA CIRCUIT - NIGHT",
+   "location": "loc_track",
+   "characters": [
+    "char_1"
+   ],
+   "action": "Onboard reply, then the car blasts past the sponsor boards under the gantry."
+  },
+  {
+   "id": "S4",
+   "beat": "build",
+   "slug": "EXT. PUSHOWL RACING PIT BOX - NIGHT",
+   "location": "loc_pitlane",
+   "characters": [
+    "char_1",
+    "char_3"
+   ],
+   "action": "Two-second pit stop; Marcus leans in with the tablet."
+  },
+  {
+   "id": "S5",
+   "beat": "build",
+   "slug": "EXT. PORT AURELIA CIRCUIT - NIGHT",
+   "location": "loc_track",
+   "characters": [
+    "char_1"
+   ],
+   "action": "Overtake on the orange car into turn one for P1, then the chequered flag under the gantry."
+  },
+  {
+   "id": "S7",
+   "beat": "payoff",
+   "slug": "EXT. PODIUM - NIGHT",
+   "location": "loc_podium",
+   "characters": [
+    "char_1"
+   ],
+   "action": "Champagne spray; Theo sniffs the bottle neck like a candle."
+  },
+  {
+   "id": "S8",
+   "beat": "payoff",
+   "slug": "INT. PRESS CONFERENCE ROOM - NIGHT",
+   "location": "loc_press",
+   "characters": [
+    "char_1",
+    "char_4",
+    "char_5"
+   ],
+   "action": "The press conference; the secret; the button."
+  },
+  {
+   "id": "S10",
+   "beat": "build",
+   "slug": "INT. BRENDA'S APARTMENT - NIGHT",
+   "location": "loc_brenda",
+   "characters": [
+    "char_6"
+   ],
+   "action": "Brenda ignores every message, until WhatsApp."
+  },
+  {
+   "id": "S6",
+   "beat": "build",
+   "slug": "INT. PUSHOWL RACING CAR - NIGHT",
+   "location": "loc_onboard",
+   "characters": [
+    "char_1"
+   ],
+   "action": "The orange Ember Racing car closes in the mirror."
+  }
+ ],
+ "clips": [
+  {
+   "id": "K1",
+   "scene": "S1",
+   "shot": "extreme close up through the visor slit, camera mounted inside the cockpit",
+   "lens": "24mm",
+   "angle": "eye level",
+   "camera": "fixed to the car",
+   "action": "Theo's calm eyes behind the visor at 300 km/h, sparks and floodlights streaking",
+   "start_frame": "Extreme close-up of Theo's eyes through the visor slit of his PushOwl Racing helmet, halo bar framing the top, floodlights streaking behind, sparks at frame edge",
+   "assets": [
+    "char_1",
+    "loc_onboard"
+   ],
+   "imperfections": [
+    "micro scratches on the visor",
+    "dust on the halo"
+   ]
+  },
+  {
+   "id": "K2",
+   "scene": "S2",
+   "shot": "medium close up",
+   "lens": "50mm",
+   "angle": "eye level, slightly low",
+   "camera": "slow push-in",
+   "action": "Priya keys her headset and speaks, eyes on the screens",
+   "start_frame": "Priya at the PushOwl Racing pit wall, headset boom mic at her mouth, tablet in hand, monitors glowing on her glasses, branded canopy above, blurred track lights behind",
+   "assets": [
+    "char_2",
+    "loc_pitwall"
+   ],
+   "imperfections": [
+    "fingerprints on the tablet",
+    "flyaway hairs"
+   ]
+  },
+  {
+   "id": "K3",
+   "scene": "S3",
+   "shot": "over the shoulder onboard, steering wheel and track ahead",
+   "lens": "28mm",
+   "angle": "behind and above the helmet",
+   "camera": "fixed to the car",
+   "action": "Theo's gloved hands on the wheel, the wheel display glowing, the street circuit rushing at camera",
+   "start_frame": "Over-the-shoulder onboard shot: Theo's PushOwl Racing helmet in the foreground left, gloved hands on the carbon steering wheel with a small glowing display, the floodlit street circuit and sponsor barrier boards rushing ahead",
+   "assets": [
+    "char_1",
+    "loc_onboard",
+    "veh_1"
+   ],
+   "imperfections": [
+    "rubber marbles on the track",
+    "heat haze"
+   ]
+  },
+  {
+   "id": "K4",
+   "scene": "S3",
+   "shot": "wide, long lens trackside",
+   "lens": "300mm",
+   "angle": "low, barrier height",
+   "camera": "pan left to right following the car",
+   "action": "the PushOwl Racing car blasts past the barrier boards under the start-finish gantry",
+   "start_frame": "Long-lens trackside shot at barrier height: the PushOwl Racing car no. 7 entering frame from the left in front of barrier advertising boards and the Port Aurelia Night Race gantry, grandstand lights beyond",
+   "assets": [
+    "veh_1",
+    "loc_track"
+   ],
+   "imperfections": [
+    "tyre smoke haze",
+    "motion blur on the wheels"
+   ]
+  },
+  {
+   "id": "K5",
+   "scene": "S4",
+   "shot": "tight insert",
+   "lens": "35mm",
+   "angle": "low at wheel height",
+   "camera": "fixed",
+   "action": "a crew member's wheel gun hits the wheel nut, sparks, the tyre comes off",
+   "start_frame": "Tight insert at wheel height in the PushOwl Racing pit box: a gloved crew hand with a wheel gun on the front-left wheel nut, branded crew fire suits and tyre warmers around, garage LEDs above",
+   "assets": [
+    "veh_1",
+    "loc_pitlane"
+   ],
+   "imperfections": [
+    "grease smears",
+    "tyre rubber dust"
+   ]
+  },
+  {
+   "id": "K7",
+   "scene": "S4",
+   "shot": "medium",
+   "lens": "35mm",
+   "angle": "eye level at the cockpit",
+   "camera": "slow push-in",
+   "action": "Marcus leans into the cockpit and holds the tablet toward Theo, speaking",
+   "start_frame": "Marcus leaning into the cockpit of the PushOwl Racing car in the pit box, holding a rugged tablet toward Theo whose visor is up, crew working around them, pit board and branded back wall behind",
+   "assets": [
+    "char_3",
+    "char_1",
+    "loc_pitlane",
+    "veh_1"
+   ],
+   "imperfections": [
+    "grease smudge on Marcus's forearm",
+    "fogged visor edge"
+   ]
+  },
+  {
+   "id": "K8",
+   "scene": "S5",
+   "shot": "wide, side by side",
+   "lens": "135mm",
+   "angle": "trackside, slightly high",
+   "camera": "pan left to right",
+   "action": "the PushOwl Racing car dives inside the orange rival car into turn one",
+   "start_frame": "Side-by-side overtake at night: the green PushOwl Racing car on the inside of the orange rival car into a floodlit corner, sponsor boards on the barriers, sparks from both floors",
+   "assets": [
+    "veh_1",
+    "veh_2",
+    "loc_track"
+   ],
+   "imperfections": [
+    "sparks",
+    "rubber on the kerb"
+   ]
+  },
+  {
+   "id": "K9",
+   "scene": "S5",
+   "shot": "wide",
+   "lens": "85mm",
+   "angle": "low, from the pit wall side",
+   "camera": "fixed",
+   "action": "the chequered flag waves as the PushOwl Racing car crosses the line under the gantry, crowd erupting",
+   "start_frame": "The start-finish line at night: a marshal waving the chequered flag from the gantry platform, the PushOwl Racing car arriving from the left, grandstand full of phone lights and fireworks beginning",
+   "assets": [
+    "veh_1",
+    "loc_track"
+   ],
+   "imperfections": [
+    "flag fabric motion blur",
+    "smoke from fireworks"
+   ]
+  },
+  {
+   "id": "K10",
+   "scene": "S7",
+   "shot": "medium close up",
+   "lens": "50mm",
+   "angle": "eye level",
+   "camera": "slow push-in",
+   "action": "Theo sprays champagne, then lowers the bottle and sniffs the neck like a candle, eyes closed",
+   "start_frame": "Theo on the top step of the branded podium, champagne soaked, lifting an unlabelled green bottle to spray, confetti and floodlights behind",
+   "assets": [
+    "char_1",
+    "loc_podium"
+   ],
+   "imperfections": [
+    "champagne droplets in the air",
+    "confetti stuck to his cap"
+   ]
+  },
+  {
+   "id": "K11",
+   "scene": "S8",
+   "shot": "wide",
+   "lens": "35mm",
+   "angle": "from the back of the room",
+   "camera": "fixed",
+   "action": "the press room: flashes pop, Journalist A stands with a microphone to ask",
+   "start_frame": "Wide of the press conference from behind the journalists: Theo seated at the branded table in front of the step-and-repeat backdrop, sponsor bottles and branded mic flags on the table, Journalist A standing with a microphone, camera flashes",
+   "assets": [
+    "char_1",
+    "char_4",
+    "loc_press"
+   ],
+   "imperfections": [
+    "flash bloom",
+    "a stray cable on the floor"
+   ]
+  },
+  {
+   "id": "K12",
+   "scene": "S8",
+   "shot": "medium close up",
+   "lens": "85mm",
+   "angle": "eye level",
+   "camera": "slow push-in",
+   "action": "Theo leans into the microphones and answers straight down the lens",
+   "start_frame": "Medium close-up of Theo at the press table, three branded mic flags in front of him, the step-and-repeat backdrop of series, race, team and sponsor logos sharp behind him",
+   "assets": [
+    "char_1",
+    "loc_press"
+   ],
+   "imperfections": [
+    "slight sweat at the temples",
+    "flash reflection in his eyes"
+   ]
+  },
+  {
+   "id": "K13",
+   "scene": "S8",
+   "shot": "medium",
+   "lens": "50mm",
+   "angle": "over Journalist B's shoulder",
+   "camera": "fixed",
+   "action": "Journalist B asks, Theo leans back with a small smile",
+   "start_frame": "Over the shoulder of Journalist B toward Theo at the branded press table, backdrop logos behind",
+   "assets": [
+    "char_5",
+    "char_1",
+    "loc_press"
+   ],
+   "imperfections": [
+    "notepad scribbles",
+    "flash bloom"
+   ]
+  },
+  {
+   "id": "B1",
+   "scene": "S10",
+   "shot": "medium wide",
+   "lens": "35mm",
+   "angle": "eye level",
+   "camera": "slow push-in",
+   "action": "Brenda on the sofa closes her laptop with a sigh and pulls the blanket up",
+   "start_frame": "Brenda on the sofa at night closing her laptop, blanket over her knees, rain on the window behind, table lamp glow, candles on the shelf in soft focus",
+   "assets": [
+    "char_6",
+    "loc_brenda"
+   ],
+   "imperfections": [
+    "film grain",
+    "soft practical glow"
+   ]
+  },
+  {
+   "id": "B2",
+   "scene": "S10",
+   "shot": "medium close up",
+   "lens": "50mm",
+   "angle": "slightly high",
+   "camera": "fixed",
+   "action": "the laptop on the coffee table lights up with a notification glow; Brenda glances at it and flicks it away without interest",
+   "start_frame": "Brenda reaching toward the open laptop on the coffee table, its screen glowing softly and angled away from camera, her face lit by it, bored expression",
+   "assets": [
+    "char_6",
+    "loc_brenda"
+   ],
+   "imperfections": [
+    "film grain",
+    "soft practical glow"
+   ]
+  },
+  {
+   "id": "B3",
+   "scene": "S10",
+   "shot": "medium",
+   "lens": "35mm",
+   "angle": "eye level",
+   "camera": "slow pan",
+   "action": "at the kitchen island Brenda pours a glass of red wine; her phone lies face down on the stone and buzzes, the edge of the screen glowing; she ignores it",
+   "start_frame": "Brenda at the pale stone kitchen island pouring red wine, her phone face down beside the glass with a thin glow at its edge, warm lamp light, rain on the window",
+   "assets": [
+    "char_6",
+    "loc_brenda"
+   ],
+   "imperfections": [
+    "film grain",
+    "soft practical glow"
+   ]
+  },
+  {
+   "id": "K14",
+   "scene": "S6",
+   "shot": "extreme close up",
+   "lens": "50mm",
+   "angle": "mirror mount",
+   "camera": "fixed to the car",
+   "action": "in the PushOwl Racing car's side mirror the orange Ember Racing car grows closer, sparks under it",
+   "start_frame": "Close-up of the PushOwl Racing car's side mirror at speed, the orange Ember Racing car filling the mirror behind, floodlights streaking, sparks",
+   "assets": [
+    "veh_1",
+    "veh_2",
+    "loc_track"
+   ],
+   "imperfections": [
+    "film grain",
+    "soft practical glow"
+   ]
+  },
+  {
+   "id": "B4",
+   "scene": "S10",
+   "shot": "close up",
+   "lens": "85mm",
+   "angle": "eye level",
+   "camera": "slow push-in",
+   "action": "Brenda on the sofa reads her phone, its glow on her face, gives a wry smirk and sets it face down on the cushion",
+   "start_frame": "Close-up of Brenda on the sofa holding her phone with the screen facing her (screen angled away from camera), its cool glow on her face, a wry smirk, blanket, lamp light",
+   "assets": [
+    "char_6",
+    "loc_brenda"
+   ],
+   "imperfections": [
+    "film grain",
+    "soft practical glow"
+   ]
+  },
+  {
+   "id": "B5",
+   "scene": "S10",
+   "shot": "insert",
+   "lens": "100mm macro",
+   "angle": "top down",
+   "camera": "fixed",
+   "action": "the phone face down on the coffee table, its edge glow fading to black, rain shadows moving across the table",
+   "start_frame": "Top-down insert of a phone lying face down on a wooden coffee table beside a mug, a thin glow at its edge, rain-streaked shadows across the wood",
+   "assets": [
+    "loc_brenda"
+   ],
+   "imperfections": [
+    "film grain",
+    "soft practical glow"
+   ]
+  },
+  {
+   "id": "B6",
+   "scene": "S10",
+   "shot": "medium close up",
+   "lens": "50mm",
+   "angle": "eye level",
+   "camera": "slow push-in",
+   "action": "Brenda's phone buzzes; she picks it up, reads, and a real smile spreads",
+   "start_frame": "Brenda curled on the sofa lifting her phone (screen angled away from camera), eyebrows rising, the start of a smile, lamp light and rain",
+   "assets": [
+    "char_6",
+    "loc_brenda"
+   ],
+   "imperfections": [
+    "film grain",
+    "soft practical glow"
+   ]
+  },
+  {
+   "id": "B7",
+   "scene": "S10",
+   "shot": "close up",
+   "lens": "85mm",
+   "angle": "eye level",
+   "camera": "fixed",
+   "action": "Brenda taps her phone decisively and grins, pulling the blanket up",
+   "start_frame": "Close-up of Brenda grinning at her phone, thumb just tapping the screen (screen angled away), cosy blanket, warm lamp",
+   "assets": [
+    "char_6",
+    "loc_brenda"
+   ],
+   "imperfections": [
+    "film grain",
+    "soft practical glow"
+   ]
+  },
+  {
+   "id": "B8",
+   "scene": "S10",
+   "shot": "medium close up",
+   "lens": "50mm",
+   "angle": "eye level",
+   "camera": "slow push-in",
+   "action": "Brenda strikes a match, lights a Burnt Rubber Candle Co. candle, leans in and sniffs it, eyes closed",
+   "start_frame": "Brenda at the shelf lighting a Burnt Rubber Candle Co. candle with a match, three candles with their labels visible, warm flame light on her face",
+   "assets": [
+    "char_6",
+    "loc_brenda"
+   ],
+   "imperfections": [
+    "film grain",
+    "soft practical glow"
+   ]
+  },
+  {
+   "id": "FC01",
+   "scene": "S1",
+   "shot": "full frame",
+   "action": "Onboard through Theo's visor at 300 km/h, sparks streaking",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC02",
+   "scene": "S2",
+   "shot": "full frame",
+   "action": "Dana Reyes on camera at the PushOwl Racing pit wall",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC03",
+   "scene": "S1",
+   "shot": "full frame",
+   "action": "Over-the-shoulder cockpit, circuit rushing at camera",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC04",
+   "scene": "S3",
+   "shot": "split screen",
+   "action": "SPLIT: the car blasts past the sponsor boards / Brenda flicks the laptop notification away (Later.)",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC05",
+   "scene": "S3",
+   "shot": "split screen",
+   "action": "SPLIT: the car at speed / Brenda pours wine, phone face down",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC06",
+   "scene": "S4",
+   "shot": "split screen",
+   "action": "SPLIT: side mirror, the orange Ember car closing / Brenda sips, phone buzzing",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC07",
+   "scene": "S4",
+   "shot": "split screen",
+   "action": "SPLIT: Theo's eyes through the visor / Brenda ignores the phone",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC08",
+   "scene": "S4",
+   "shot": "split screen",
+   "action": "SPLIT: cockpit, sparks off the floor / Brenda reads the SMS on the sofa",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC09",
+   "scene": "S4",
+   "shot": "split screen",
+   "action": "SPLIT: wheel to wheel / Brenda: Nope.",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC10",
+   "scene": "S4",
+   "shot": "full frame",
+   "action": "Wheel to wheel with the Ember car through the fast corner",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC11",
+   "scene": "S4",
+   "shot": "full frame",
+   "action": "Insert (from the last good frame): the rear twitches, sparks, Theo catches it and stays ahead",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC12",
+   "scene": "S2",
+   "shot": "full frame",
+   "action": "Dana on camera: Box, box, Theo. One last shot.",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC13",
+   "scene": "S5",
+   "shot": "full frame",
+   "action": "The car slides into the PushOwl Racing pit box",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC14",
+   "scene": "S5",
+   "shot": "full frame",
+   "action": "Wheel gun, sparks",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC15",
+   "scene": "S5",
+   "shot": "full frame",
+   "action": "Insert: Marcus leans in with the tablet: Let's send a WhatsApp message. She'll bite.",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC16",
+   "scene": "S6",
+   "shot": "split screen",
+   "action": "SPLIT: out of the pits in tyre smoke / Brenda's phone lights up",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC17",
+   "scene": "S6",
+   "shot": "split screen",
+   "action": "SPLIT: hunting Castell, the overtake / Brenda reads, Ten percent? Fine., taps to order",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC18",
+   "scene": "S6",
+   "shot": "full frame",
+   "action": "Chequered flag at the gantry, fireworks",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC19",
+   "scene": "S6",
+   "shot": "full frame",
+   "action": "Cockpit on the slow-down lap, Theo punches the air",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC20",
+   "scene": "S7",
+   "shot": "full frame",
+   "action": "Podium champagne spray in slow motion (0.64x)",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC21",
+   "scene": "S8",
+   "shot": "full frame",
+   "action": "Press conference, flashes: Theo, what's your secret?",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC22",
+   "scene": "S8",
+   "shot": "full frame",
+   "action": "Theo close-up, straight down the lens: the CTA",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC23",
+   "scene": "S8",
+   "shot": "full frame",
+   "action": "Over Journalist B's shoulder: Who's Brenda? / One more valuable customer PushOwl got me.",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "FC24",
+   "scene": "S9",
+   "shot": "full frame",
+   "action": "Brenda lights a Burnt Rubber candle and sniffs it",
+   "camera": "as generated",
+   "lens": "",
+   "final_still": true
+  },
+  {
+   "id": "SPF",
+   "scene": "S4",
+   "shot": "first frame of the spin-fix insert",
+   "action": "last good frame before the spin: both cars pointing forward",
+   "camera": "tracking",
+   "lens": ""
+  },
+  {
+   "id": "MCF",
+   "scene": "S5",
+   "shot": "first frame of the pit-stop insert",
+   "action": "Marcus leaning into the cockpit with the tablet",
+   "camera": "fixed",
+   "lens": ""
+  }
+ ],
+ "sequences": [
+  {
+   "id": "R1",
+   "t0": 0,
+   "gen_s": 30,
+   "used_s": 27.625,
+   "keyframes": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K14",
+    "K8",
+    "K5"
+   ],
+   "first_frame": "K1",
+   "prompt": "References: @image1 is the look of the onboard close-up through Theo's visor; @image2 is the look of Dana Reyes at the PushOwl Racing pit wall; @image3 is the look of the over-the-shoulder cockpit view; @image4 is the look of the PushOwl Racing car passing the sponsor boards; @image5 is the look of the side mirror with the orange Ember Racing car closing; @image6 is the look of the two cars wheel to wheel; @image7 is the look of the PushOwl Racing pit box; @image8 is Theo Vance's face; @image9 is Dana Reyes's face; @image10 is PushOwl Racing livery, suit and helmet board; @image11 is trackside barrier, grandstand and gantry board; @image12 is PushOwl Racing garage and pit board; @image13 is Ember Racing (orange rival) logo. @audio1 is ONLY the voice of Dana Reyes, @audio2 is ONLY the voice of Theo Vance: match their timbre, pitch and accent exactly and keep each voice identical in every line; the words in the voice samples are not part of this film and are never spoken.\nA 30 second cinematic race thriller, one continuous generation of ten shots, the Port Aurelia Night Race. Vertical 9:16, ultra-real, ARRI Alexa 35 look, Kodak 500T grain, rich night blacks, cool floodlight and warm sodium at the track. Hard motivated cuts, fast camera. Faces, wardrobe, the green PushOwl Racing car no. 7 and every logo exactly as in the references. BRANDS: the only logos anywhere are the fictional ones on the supplied brand boards (Meridian Series, Port Aurelia Night Race, PushOwl Racing, KALOR, GRAVIK, HALDEN, VOLTIQ, ZENTEL, HAULIX, Ember Racing, Altair Racing, Burnt Rubber Candle Co.); every other sign or screen is blank. Phone and laptop screens always face away from camera. No on-screen text, captions or subtitles.\nFRAMING: from 6.5 s to 28.5 s every shot keeps its subject and all action inside the middle half of the frame height (the picture will be cropped to a wide band), nothing important in the top or bottom quarter.\nSOUND: NO MUSIC AT ALL, no score, no drums, no stings (music is added later). The soundtrack is only the spoken lines plus natural sound: engines, tyres, crowd, radio texture, room tone. Engines scream, sparks crackle, the crowd roars; there are deliberate one-second beats of pure engine sound between some lines, as marked.\nVOICES: Dana, @audio1. Theo, @audio2. TV commentator: American male, big broadcast baritone, fast and excited, heard as a live broadcast feed. Spotter: American male, clipped tenor on the team radio, calm and precise, clearly different from Theo.\nPHYSICS: every object keeps one consistent physical state within a shot; phones and helmets never flip, morph or change shape; no flashes or glitch frames.\n0 to 1.6 s: extreme close-up onboard through Theo's visor at 300 km/h, sparks streaking. The TV commentator, excited and fast: \"Lap forty-one, and Vance is hunting Castell!\"\n1.6 to 4.8 s: Dana Reyes on camera at the PushOwl Racing pit wall, headset mic at her lips, she turns to the lens-side monitor and speaks, urgent but deadpan, stress on \"Brenda\": \"Theo. Your store. Brenda just abandoned her cart.\"\n4.8 to 6.5 s: over-the-shoulder cockpit view, circuit rushing at camera. Theo on the radio, cool and almost amused: \"Relax. It's on autopilot.\"\n6.5 to 9.5 s: camera rides low alongside the PushOwl Racing car past the sponsor boards. Dana on the radio, clipped: \"Push sent.\" Then one second of pure engine roar. Then Dana, flat and dry: \"Dismissed.\"\n9.5 to 13 s: extreme close-up of the side mirror, the orange Ember Racing car growing closer. The spotter, clipped and calm: \"Castell behind. Half a second.\" Dana on the radio, quick: \"Email's out.\"\n13 to 17 s: tight on Theo's eyes through the visor, jaw set. The TV commentator, rising: \"Castell is all over the back of him!\" One second of engine roar. Dana on the radio, same voice, slightly faster: \"Email unopened.\"\n17 to 21 s: cockpit view, sparks off the floor. Theo on the radio, low, firm and calm: \"Text her.\" Dana on the radio, focused: \"SMS going out.\" Then one and a half seconds of pure engine roar.\n21 to 25 s: the orange Ember Racing car lunges alongside, wheel to wheel through a fast corner. The spotter, urgent and rising: \"Side by side. Hold it. Hold it!\" The TV commentator, relieved: \"Vance just about keeps it!\"\n25 to 28.5 s: Dana on camera at the pit wall, decisive, eyes on her screen: \"Box, box, Theo. One last shot.\" The car peels into the pit lane; Theo on the radio, one calm word: \"Copy.\"\n28.5 to 30 s: the PushOwl Racing car slides into its pit box, the crew braced, a heartbeat of stillness.\nDELIVERY: every quoted line is spoken clearly, exactly as written, once, acted not read, the noted emotion in the face (on camera) and voice, natural breaths, stressed words stressed. Radio lines are clear and lightly compressed, never muffled. Nothing outside the quotes is ever spoken.",
+   "take": "R11",
+   "notes": "race part A, 17 lines; 23.0 to 25.4 s replaced by the SP insert (a spin)",
+   "voice_refs": [
+    "https://farooqchisty-hub.github.io/ad-intel-agent/vref/dana.mp3",
+    "https://farooqchisty-hub.github.io/ad-intel-agent/vref/theo.mp3"
+   ]
+  },
+  {
+   "id": "BR",
+   "t0": 8.46,
+   "gen_s": 28,
+   "used_s": 20.77,
+   "keyframes": [
+    "B2",
+    "B3",
+    "B4",
+    "B1",
+    "B6",
+    "B7"
+   ],
+   "first_frame": "B2",
+   "prompt": "References: @image1 is the look of Brenda and the glowing laptop on the coffee table; @image2 is the look of Brenda at the kitchen island with wine, phone face down; @image3 is the look of Brenda reading her phone on the sofa; @image4 is the look of Brenda on her sofa under a blanket; @image5 is the look of Brenda lifting her phone and starting to smile; @image6 is the look of Brenda tapping her phone and grinning; @image7 is Brenda's face; @image8 is Brenda's apartment.\nA 28 second cinematic sequence in one apartment on a rainy night, one continuous generation of six shots. Vertical 9:16, ultra-real, ARRI Alexa 35 look, Kodak 500T grain, warm lamp light and cool rain-light through the window, rain streaks on the glass. Brenda's face, hair and clothes exactly as in the references in every shot. Phone and laptop screens always face away from camera; only their glow is seen. No logos, no on-screen text, captions or subtitles.\nFRAMING: every shot keeps Brenda and all action inside the middle half of the frame height (the picture will be cropped to a wide band), medium framing, nothing important in the top or bottom quarter.\nSOUND: NO MUSIC AT ALL (music is added later). Only rain on the window, room tone, wine pouring, the phone buzzing, the TV murmur, and Brenda's three short lines.\nVOICE: Brenda, American, mid-thirties, soft warm mezzo, lazily dry, muttering to herself.\nPHYSICS: every object keeps one consistent physical state within a shot; phones and helmets never flip, morph or change shape; no flashes or glitch frames. The phone only ever moves when her hand moves it.\n0 to 3.5 s: Brenda on the sofa; the laptop on the coffee table lights up with a notification glow; she glances and flicks it away with one finger, muttered, bored: \"Later.\"\n3.5 to 8 s: at the kitchen island she pours red wine; her phone lies face down on the stone, buzzing, its edge glowing; she ignores it and sips.\n8 to 11.5 s: she leans on the counter by the rainy window with her glass; the phone buzzes again on the stone; she rolls her eyes without looking at it.\n11.5 to 15.5 s: back on the sofa she reads her phone, its glow on her face, a wry smirk; dry and amused: \"Nope.\" She lays it screen-down on the cushion in one clean motion.\n15.5 to 21.5 s: she pulls the blanket up to her chin, the TV glow flickering on her face, she settles and yawns; the phone lies dark beside her.\n21.5 to 28 s: the phone lights up and buzzes; she picks it up, reads, eyebrows up, a slow smile; playful, giving in: \"Ten percent? Fine.\" She taps the screen once, decisively, grins, and hugs a cushion.\nDELIVERY: each quoted line is spoken once, exactly as written, a natural mutter with the emotion in her face and voice. Nothing outside the quotes is ever spoken.",
+   "take": "BR1",
+   "notes": "Brenda's night in one continuous take, used as the bottom half of both split screens",
+   "voice_refs": []
+  },
+  {
+   "id": "SP",
+   "t0": 23.0,
+   "gen_s": 4,
+   "used_s": 2.375,
+   "keyframes": [
+    "SPF"
+   ],
+   "first_frame": "SPF",
+   "prompt": "@image1 is the first frame of this shot.\nContinue this exact shot for 4 seconds, same camera, lens, height and grade as @image1: the camera tracks alongside both cars through a fast corner at night on the Port Aurelia street circuit. At about 1 second the rear of the green PushOwl Racing car no. 7 twitches out a few degrees with a burst of sparks and a short tyre squeal; the driver catches it with one quick flick of opposite lock and the car snaps straight again within half a second. Both cars stay pointed forward in the direction of travel the whole time; the green car keeps its nose just ahead of the orange Ember Racing car and both keep driving forward down the track.\nPHYSICS: real single-seater race-car physics. No spin, no turning around, no sliding sideways more than a few degrees, no reversing; no car ever faces the camera or changes direction; wheels stay on the track; no morphing, no flashes, no glitch frames.\nEvery logo stays exactly as in @image1; no other brands appear. SOUND: engines at full scream, tyre squeal, sparks, crowd; NO music and NO speech. No on-screen text, captions or subtitles.",
+   "take": "SP2",
+   "notes": "insert from the last good frame: the twitch and catch, R1 audio kept",
+   "voice_refs": []
+  },
+  {
+   "id": "R2",
+   "t0": 30.0,
+   "gen_s": 20,
+   "used_s": 17.5,
+   "keyframes": [
+    "K5",
+    "K7",
+    "K8",
+    "K3",
+    "K9",
+    "K10",
+    "K11"
+   ],
+   "first_frame": "K5",
+   "prompt": "References: @image1 is the look of the pit stop wheel gun; @image2 is the look of Marcus leaning into the cockpit with a tablet; @image3 is the look of the overtake on the orange Ember Racing car; @image4 is the look of the over-the-shoulder cockpit view; @image5 is the look of the chequered flag at the gantry; @image6 is the look of Theo on the podium with champagne; @image7 is the look of the press conference room; @image8 is Theo Vance's face; @image9 is Marcus Cole's face; @image10 is Journalist A's face; @image11 is PushOwl Racing livery, suit and helmet board; @image12 is PushOwl Racing garage and pit board; @image13 is trackside barrier, grandstand and gantry board; @image14 is podium board; @image15 is press conference step-and-repeat board; @image16 is Ember Racing (orange rival) logo. @audio1 is ONLY the voice of Dana Reyes, @audio2 is ONLY the voice of Theo Vance: match their timbre, pitch and accent exactly and keep each voice identical in every line; the words in the voice samples are not part of this film and are never spoken. @audio3 is ONLY the voice of Marcus Cole (same rule).\nA 20 second cinematic race thriller, one continuous generation of seven shots, continuing straight on from the pit stop of the Port Aurelia Night Race (same night, same people, same grade). Vertical 9:16, ultra-real, ARRI Alexa 35 look, Kodak 500T grain, rich night blacks, cool floodlight and warm sodium at the track. Faces, wardrobe, the green PushOwl Racing car no. 7 and every logo exactly as in the references. BRANDS: the only logos anywhere are the fictional ones on the supplied brand boards (Meridian Series, Port Aurelia Night Race, PushOwl Racing, KALOR, GRAVIK, HALDEN, VOLTIQ, ZENTEL, HAULIX, Ember Racing, Altair Racing, Burnt Rubber Candle Co.); every other sign or screen is blank. Phone and laptop screens always face away from camera. No on-screen text, captions or subtitles.\nFRAMING: from 3 s to 11 s every shot keeps its subject and all action inside the middle half of the frame height (the picture will be cropped to a wide band).\nSOUND: NO MUSIC AT ALL, no score, no drums, no stings (music is added later). The soundtrack is only the spoken lines plus natural sound: engines, tyres, crowd, radio texture, room tone.\nVOICES: Dana, @audio1. Theo, @audio2. Marcus, @audio3. TV commentator: American male, big broadcast baritone, fast and excited, a live broadcast feed. Spotter: American male, clipped tenor on the team radio. Journalist A: American woman, bright and eager.\nPHYSICS: every object keeps one consistent physical state within a shot; phones and helmets never flip, morph or change shape; no flashes or glitch frames.\n0 to 3 s: pit stop: wheel guns shriek, sparks, the crew swarms; Marcus leans into the cockpit with a tablet and says low and conspiratorial, a grin: \"WhatsApp. Ten percent off. She'll bite.\"\n3 to 11 s: the PushOwl Racing car blasts out of the pits and hunts the orange Ember Racing car, then dives down the inside and overtakes. The TV commentator, excited: \"Vance out of the pits, right on Castell's gearbox!\" One and a half seconds of pure engine roar. The spotter, sharp: \"Inside's open. Go!\" Theo on the radio, half a whisper: \"Come on, Brenda.\" Dana on the radio, breaking into joy: \"She bought them! Order's in!\"\n11 to 13.5 s: the chequered flag waves at the gantry as the PushOwl Racing car flashes under it, fireworks. The TV commentator, roaring: \"Theo Vance wins the Port Aurelia Night Race!\"\n13.5 to 16.5 s: cockpit view on the slow-down lap, Theo punches the air. Dana on the radio, warm relief, a playful beat before the last words: \"Congrats, Theo. You won the race. And the order.\"\n16.5 to 18 s: podium: Theo sprays champagne, then sniffs the bottle like a candle, grinning.\n18 to 20 s: the press conference room, camera flashes; Journalist A, bright and eager: \"Theo, what's your secret?\"\nDELIVERY: every quoted line is spoken clearly, exactly as written, once, acted not read, the noted emotion in the face (on camera) and voice, natural breaths, stressed words stressed. Radio lines are clear and lightly compressed, never muffled. Nothing outside the quotes is ever spoken.",
+   "take": "R21",
+   "notes": "race part B; the podium plays at 0.64x for a breath before the journalist",
+   "voice_refs": [
+    "https://farooqchisty-hub.github.io/ad-intel-agent/vref/dana.mp3",
+    "https://farooqchisty-hub.github.io/ad-intel-agent/vref/theo.mp3",
+    "https://farooqchisty-hub.github.io/ad-intel-agent/vref/marcus.mp3"
+   ]
+  },
+  {
+   "id": "MC",
+   "t0": 30.667,
+   "gen_s": 4,
+   "used_s": 2.5,
+   "keyframes": [
+    "MCF"
+   ],
+   "first_frame": "MCF",
+   "prompt": "@image1 is the first frame of this shot; @image2 is Marcus Cole's face; @image3 is Theo Vance's face; @image4 is the PushOwl Racing garage and pit board. @audio1 is ONLY the voice of Marcus Cole: match his timbre, pitch and gravelly accent exactly; the words in the sample are not part of this film and are never spoken.\nContinue this exact shot for 4 seconds, same camera, lens and grade as @image1: the PushOwl Racing pit box during a pit stop at night. Marcus leans into the cockpit holding the tablet (its screen faces away from camera) and, starting at 0.2 seconds, says to Theo, low and conspiratorial with a knowing grin, at a brisk pace: \"Let's send a WhatsApp message. She'll bite.\" Theo, in the cockpit, gives one sharp nod. The crew works fast behind them.\nFaces, wardrobe and logos exactly as in the references. PHYSICS: people and objects keep one consistent state; the tablet never flips; no flashes or glitch frames.\nSOUND: pit-stop wheel guns and air tools, engine idle; NO music. The quoted line is spoken clearly, once, exactly as written, acted not read; nothing else is ever spoken. No on-screen text, captions or subtitles.",
+   "take": "MC1",
+   "notes": "insert: Marcus's line, Let's send a WhatsApp message. She'll bite.",
+   "voice_refs": [
+    "https://farooqchisty-hub.github.io/ad-intel-agent/vref/rb6/marcus_r2.mp3"
+   ]
+  },
+  {
+   "id": "E",
+   "t0": 50.797,
+   "gen_s": 14,
+   "used_s": 14,
+   "keyframes": [
+    "K12",
+    "K13",
+    "B8"
+   ],
+   "first_frame": "K12",
+   "prompt": "References: @image1 is the look of Theo's tight close-up at the press table; @image2 is the look of the shot over Journalist B's shoulder toward Theo; @image3 is the look of Brenda lighting a Burnt Rubber Candle Co. candle; @image4 is Theo Vance's face; @image5 is Journalist B's face (bald); @image6 is Brenda's face; @image7 is the press conference backdrop and mic flags; @image8 is the Burnt Rubber Candle Co. candles. @audio1 is ONLY the voice of Theo Vance: match his timbre, pitch and accent exactly; the words in the sample are not part of this film and are never spoken.\nA 14 second cinematic ending in three shots, vertical 9:16, ultra-real, ARRI Alexa 35 look, Kodak 500T grain, the same post-race press conference and the same rainy-night apartment as the references. Faces and logos exactly as in the references. BRANDS: the only logos anywhere are the fictional ones on the supplied brand boards (Meridian Series, Port Aurelia Night Race, PushOwl Racing, KALOR, GRAVIK, HALDEN, VOLTIQ, ZENTEL, HAULIX, Ember Racing, Altair Racing, Burnt Rubber Candle Co.); every other sign or screen is blank. Phone and laptop screens always face away from camera. No on-screen text, captions or subtitles.\nSOUND: NO MUSIC AT ALL (music is added later). Only the spoken lines, soft camera shutters and room tone in the press room, rain and a match strike in the apartment.\nVOICES: Theo, @audio1, dry, confident and friendly. Journalist B, American man, slow and skeptical, gravel low.\nPHYSICS: every object keeps one consistent physical state within a shot; phones and helmets never flip, morph or change shape; no flashes or glitch frames.\n0 to 9.4 s: tight close-up of Theo at the press table, his face filling the upper half of the frame, backdrop logos soft behind him, straight down the lens, dry, confident and friendly, unhurried and clear, a smile on \"free\": \"My e-commerce store sells while I race. Thanks to Push-OWL, the omni-channel marketing platform that works while I'm busy racing. Sign up free on Shopify.\" (Push-OWL is the brand name, two syllables said as one word: PUSH then OWL like the bird, OWL stressed, the OW as in ouch and the final L clearly finished, no pause between them) (omni-channel is said OM-nee CHAN-nel, four clear syllables, like omni plus channel; e-commerce said EE-commerce; Shopify said clearly)\n9.4 to 12.6 s: over Journalist B's shoulder toward Theo; Journalist B, slow and skeptical: \"Who's Brenda?\" Theo leans back with a warm, knowing smirk, easy and proud: \"One more valuable customer Push-OWL got me.\" (Push-OWL is the brand name, two syllables said as one word: PUSH then OWL like the bird, OWL stressed, the OW as in ouch and the final L clearly finished, no pause between them)\n12.6 to 14 s: Brenda at her shelf strikes a match, lights a Burnt Rubber Candle Co. candle and sniffs it, eyes closed, a small contented smile.\nDELIVERY: every quoted line is spoken clearly, exactly as written, once, acted not read, the noted emotion in the face (on camera) and voice, natural breaths, stressed words stressed. Radio lines are clear and lightly compressed, never muffled. Nothing outside the quotes is ever spoken.",
+   "take": "E6",
+   "notes": "the ending: both brand lines, take 6 of 6 (brand clean on 3 transcribers)",
+   "voice_refs": [
+    "https://farooqchisty-hub.github.io/ad-intel-agent/vref/theo.mp3"
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "n": 1,
+   "beat": "hook",
+   "kind": "ai",
+   "clip": "FC01",
+   "seq": "R1",
+   "dur_s": 3.333,
+   "scene": "S1",
+   "layout": "full",
+   "overlay": "Lap tower LAP 41/58, VAN P2",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 2,
+   "beat": "setup",
+   "kind": "ai",
+   "clip": "FC02",
+   "seq": "R1",
+   "dur_s": 2.875,
+   "scene": "S2",
+   "layout": "full",
+   "overlay": "Cart abandoned card (Brenda, 3 candles)",
+   "sfx": "cart alert",
+   "onscreen": ""
+  },
+  {
+   "n": 3,
+   "beat": "setup",
+   "kind": "ai",
+   "clip": "FC03",
+   "seq": "R1",
+   "dur_s": 2.25,
+   "scene": "S1",
+   "layout": "full",
+   "overlay": "Recovery tracker: Push SENDING",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 4,
+   "beat": "build",
+   "kind": "ai",
+   "clip": "FC04",
+   "seq": "R1",
+   "dur_s": 2.642,
+   "scene": "S3",
+   "layout": "split",
+   "overlay": "Web push lands in Brenda's half, swiped, DISMISSED",
+   "sfx": "push notification",
+   "onscreen": ""
+  },
+  {
+   "n": 5,
+   "beat": "build",
+   "kind": "ai",
+   "clip": "FC05",
+   "seq": "R1",
+   "dur_s": 1.608,
+   "scene": "S3",
+   "layout": "split",
+   "overlay": "Tracker: Push DISMISSED, Email SENDING",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 6,
+   "beat": "build",
+   "kind": "ai",
+   "clip": "FC06",
+   "seq": "R1",
+   "dur_s": 3.667,
+   "scene": "S4",
+   "layout": "split",
+   "overlay": "Gap readout CAS +0.5 CLOSING",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 7,
+   "beat": "build",
+   "kind": "ai",
+   "clip": "FC07",
+   "seq": "R1",
+   "dur_s": 2.083,
+   "scene": "S4",
+   "layout": "split",
+   "overlay": "Email inbox row lands, UNOPENED",
+   "sfx": "email notification",
+   "onscreen": ""
+  },
+  {
+   "n": 8,
+   "beat": "build",
+   "kind": "ai",
+   "clip": "FC08",
+   "seq": "R1",
+   "dur_s": 2.209,
+   "scene": "S4",
+   "layout": "split",
+   "overlay": "SMS bubble, SEEN",
+   "sfx": "SMS notification",
+   "onscreen": ""
+  },
+  {
+   "n": 9,
+   "beat": "build",
+   "kind": "ai",
+   "clip": "FC09",
+   "seq": "R1",
+   "dur_s": 0.733,
+   "scene": "S4",
+   "layout": "split",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 10,
+   "beat": "build",
+   "kind": "ai",
+   "clip": "FC10",
+   "seq": "R1",
+   "dur_s": 1.6,
+   "scene": "S4",
+   "layout": "full",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 11,
+   "beat": "build",
+   "kind": "ai",
+   "clip": "FC11",
+   "seq": "SP",
+   "dur_s": 2.375,
+   "scene": "S4",
+   "layout": "full",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 12,
+   "beat": "turn",
+   "kind": "ai",
+   "clip": "FC12",
+   "seq": "R1",
+   "dur_s": 2.333,
+   "scene": "S2",
+   "layout": "full",
+   "overlay": "Tracker: Push, Email, SMS all failed, WhatsApp waiting",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 13,
+   "beat": "turn",
+   "kind": "ai",
+   "clip": "FC13",
+   "seq": "R1",
+   "dur_s": 2.292,
+   "scene": "S5",
+   "layout": "full",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 14,
+   "beat": "turn",
+   "kind": "ai",
+   "clip": "FC14",
+   "seq": "R2",
+   "dur_s": 0.667,
+   "scene": "S5",
+   "layout": "full",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 15,
+   "beat": "turn",
+   "kind": "ai",
+   "clip": "FC15",
+   "seq": "MC",
+   "dur_s": 2.5,
+   "scene": "S5",
+   "layout": "full",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 16,
+   "beat": "payoff",
+   "kind": "ai",
+   "clip": "FC16",
+   "seq": "R2",
+   "dur_s": 1.416,
+   "scene": "S6",
+   "layout": "split",
+   "overlay": "WhatsApp with BRENDA10, 10% OFF",
+   "sfx": "WhatsApp notification",
+   "onscreen": ""
+  },
+  {
+   "n": 17,
+   "beat": "payoff",
+   "kind": "ai",
+   "clip": "FC17",
+   "seq": "R2",
+   "dur_s": 6.417,
+   "scene": "S6",
+   "layout": "split",
+   "overlay": "Tower swap VAN to P1",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 18,
+   "beat": "payoff",
+   "kind": "ai",
+   "clip": "FC18",
+   "seq": "R2",
+   "dur_s": 3.875,
+   "scene": "S6",
+   "layout": "full",
+   "overlay": "Shopify order toast $86.40, tracker RECOVERED",
+   "sfx": "order chime",
+   "onscreen": ""
+  },
+  {
+   "n": 19,
+   "beat": "payoff",
+   "kind": "ai",
+   "clip": "FC19",
+   "seq": "R2",
+   "dur_s": 2.167,
+   "scene": "S6",
+   "layout": "full",
+   "overlay": "RACE WON / ORDER WON",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 20,
+   "beat": "payoff",
+   "kind": "ai",
+   "clip": "FC20",
+   "seq": "R2",
+   "dur_s": 2.212,
+   "scene": "S7",
+   "layout": "full",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 21,
+   "beat": "cta",
+   "kind": "ai",
+   "clip": "FC21",
+   "seq": "R2",
+   "dur_s": 1.543,
+   "scene": "S8",
+   "layout": "full",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 22,
+   "beat": "cta",
+   "kind": "ai",
+   "clip": "FC22",
+   "seq": "E",
+   "dur_s": 8.786,
+   "scene": "S8",
+   "layout": "full",
+   "overlay": "Channel orbit + SIGN UP FREE",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 23,
+   "beat": "cta",
+   "kind": "ai",
+   "clip": "FC23",
+   "seq": "E",
+   "dur_s": 3.167,
+   "scene": "S8",
+   "layout": "full",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  },
+  {
+   "n": 24,
+   "beat": "button",
+   "kind": "ai",
+   "clip": "FC24",
+   "seq": "E",
+   "dur_s": 2.047,
+   "scene": "S9",
+   "layout": "full",
+   "overlay": "",
+   "sfx": "",
+   "onscreen": ""
+  }
+ ],
+ "vo": [
+  {
+   "t0": 0.26,
+   "t1": 3.3,
+   "who": "char_8",
+   "on_camera": false,
+   "line": "Lap forty-one, and Vance is hunting Castell!"
+  },
+  {
+   "t0": 3.33,
+   "t1": 6.22,
+   "who": "char_2",
+   "on_camera": true,
+   "line": "Theo. Your store. Brenda just abandoned her cart."
+  },
+  {
+   "t0": 6.22,
+   "t1": 8.4,
+   "who": "char_1",
+   "on_camera": false,
+   "line": "Relax. It's on autopilot."
+  },
+  {
+   "t0": 8.48,
+   "t1": 9.3,
+   "who": "char_2",
+   "on_camera": false,
+   "line": "Push sent."
+  },
+  {
+   "t0": 10.16,
+   "t1": 10.6,
+   "who": "char_6",
+   "on_camera": true,
+   "line": "Later."
+  },
+  {
+   "t0": 11.89,
+   "t1": 12.46,
+   "who": "char_2",
+   "on_camera": false,
+   "line": "Dismissed."
+  },
+  {
+   "t0": 12.46,
+   "t1": 14.76,
+   "who": "char_7",
+   "on_camera": false,
+   "line": "Castell behind. Half a second."
+  },
+  {
+   "t0": 14.76,
+   "t1": 15.48,
+   "who": "char_2",
+   "on_camera": false,
+   "line": "Email's out."
+  },
+  {
+   "t0": 15.48,
+   "t1": 17.62,
+   "who": "char_8",
+   "on_camera": false,
+   "line": "Castell is all over the back of him!"
+  },
+  {
+   "t0": 17.66,
+   "t1": 18.52,
+   "who": "char_2",
+   "on_camera": false,
+   "line": "Email unopened."
+  },
+  {
+   "t0": 18.52,
+   "t1": 19.32,
+   "who": "char_1",
+   "on_camera": false,
+   "line": "Text her."
+  },
+  {
+   "t0": 19.32,
+   "t1": 20.56,
+   "who": "char_2",
+   "on_camera": false,
+   "line": "SMS going out."
+  },
+  {
+   "t0": 20.67,
+   "t1": 21.05,
+   "who": "char_6",
+   "on_camera": true,
+   "line": "Nope."
+  },
+  {
+   "t0": 21.27,
+   "t1": 23.32,
+   "who": "char_7",
+   "on_camera": false,
+   "line": "Side by side. Hold it. Hold it!"
+  },
+  {
+   "t0": 23.32,
+   "t1": 25.1,
+   "who": "char_8",
+   "on_camera": false,
+   "line": "Vance just about keeps it!"
+  },
+  {
+   "t0": 25.12,
+   "t1": 27.1,
+   "who": "char_2",
+   "on_camera": true,
+   "line": "Box, box, Theo. One last shot."
+  },
+  {
+   "t0": 27.14,
+   "t1": 27.66,
+   "who": "char_1",
+   "on_camera": false,
+   "line": "Copy."
+  },
+  {
+   "t0": 31.02,
+   "t1": 32.77,
+   "who": "char_3",
+   "on_camera": true,
+   "line": "Let's send a WhatsApp message. She'll bite."
+  },
+  {
+   "t0": 33.46,
+   "t1": 36.6,
+   "who": "char_8",
+   "on_camera": false,
+   "line": "Vance out of the pits, right on Castell's gearbox!"
+  },
+  {
+   "t0": 36.75,
+   "t1": 37.52,
+   "who": "char_1",
+   "on_camera": false,
+   "line": "Come on, Brenda."
+  },
+  {
+   "t0": 37.74,
+   "t1": 39.99,
+   "who": "char_6",
+   "on_camera": true,
+   "line": "Ten percent? Fine."
+  },
+  {
+   "t0": 40.0,
+   "t1": 41.31,
+   "who": "char_7",
+   "on_camera": false,
+   "line": "Inside's open. Go!"
+  },
+  {
+   "t0": 41.33,
+   "t1": 42.93,
+   "who": "char_2",
+   "on_camera": false,
+   "line": "She bought them! Order's in!"
+  },
+  {
+   "t0": 42.97,
+   "t1": 45.72,
+   "who": "char_8",
+   "on_camera": false,
+   "line": "Theo Vance wins the Port Aurelia Night Race!"
+  },
+  {
+   "t0": 45.75,
+   "t1": 48.45,
+   "who": "char_2",
+   "on_camera": false,
+   "line": "Congrats, Theo. You won the race. And the order."
+  },
+  {
+   "t0": 49.45,
+   "t1": 50.75,
+   "who": "char_4",
+   "on_camera": false,
+   "line": "Theo, what's your secret?"
+  },
+  {
+   "t0": 50.797,
+   "t1": 59.397,
+   "who": "char_1",
+   "on_camera": true,
+   "line": "My ecommerce store sells while I race. Thanks to PushOwl, the omnichannel marketing platform that works while I'm busy racing. Sign up free on Shopify."
+  },
+  {
+   "t0": 59.497,
+   "t1": 60.346,
+   "who": "char_5",
+   "on_camera": false,
+   "line": "Who's Brenda?"
+  },
+  {
+   "t0": 60.497,
+   "t1": 62.797,
+   "who": "char_1",
+   "on_camera": true,
+   "line": "One more valuable customer PushOwl got me."
+  }
+ ],
+ "cta": {
+  "spoken": "My ecommerce store sells while I race. Thanks to PushOwl, the omnichannel marketing platform that works while I'm busy racing. Sign up free on Shopify.",
+  "onscreen": "Sign up free"
+ },
+ "claims": [
+  {
+   "used": "Sign up free on Shopify",
+   "ledger": "L5"
+  },
+  {
+   "used": "push, email, SMS and WhatsApp in the flow and channel graphics",
+   "ledger": "L7"
+  },
+  {
+   "used": "the abandoned cart flow running on its own",
+   "ledger": "L8"
+  },
+  {
+   "used": "4.8 stars, 2,268 reviews on the App Store card",
+   "ledger": "L1"
+  }
+ ],
+ "mg": [
+  {
+   "id": "M1v",
+   "t0": 0.3,
+   "speed": 1.2,
+   "placement": {}
+  },
+  {
+   "id": "M3",
+   "t0": 4.9,
+   "speed": 1.25,
+   "placement": {}
+  },
+  {
+   "id": "N1a",
+   "t0": 6.9,
+   "speed": 1.4,
+   "placement": {}
+  },
+  {
+   "id": "M4d",
+   "t0": 8.6,
+   "speed": 1.0,
+   "placement": {
+    "y": 731
+   }
+  },
+  {
+   "id": "N1b",
+   "t0": 11.5,
+   "speed": 1.4,
+   "placement": {}
+  },
+  {
+   "id": "N4",
+   "t0": 13.82,
+   "speed": 1.25,
+   "placement": {}
+  },
+  {
+   "id": "N3",
+   "t0": 16.1,
+   "speed": 1.0,
+   "placement": {
+    "x": 110,
+    "y": 1435,
+    "scale": 0.8
+   }
+  },
+  {
+   "id": "N5",
+   "t0": 18.9,
+   "speed": 1.0,
+   "placement": {
+    "x": 150,
+    "y": 740,
+    "scale": 0.85
+   }
+  },
+  {
+   "id": "N1c",
+   "t0": 24.9,
+   "speed": 1.25,
+   "placement": {}
+  },
+  {
+   "id": "N6",
+   "t0": 34.0,
+   "speed": 1.1,
+   "placement": {
+    "x": 232,
+    "y": 1248,
+    "scale": 0.8
+   }
+  },
+  {
+   "id": "M10",
+   "t0": 39.9,
+   "speed": 1.25,
+   "placement": {}
+  },
+  {
+   "id": "M9v",
+   "t0": 42.0,
+   "speed": 1.25,
+   "placement": {}
+  },
+  {
+   "id": "N1d",
+   "t0": 43.4,
+   "speed": 1.4,
+   "placement": {}
+  },
+  {
+   "id": "M17",
+   "t0": 46.43,
+   "speed": 1.1,
+   "placement": {
+    "x": 20,
+    "y": -109,
+    "scale": 0.75
+   }
+  },
+  {
+   "id": "M14v",
+   "t0": 53.397,
+   "speed": 1.0,
+   "placement": {
+    "y": 700
+   }
+  },
+  {
+   "id": "M18",
+   "t0": 58.096,
+   "speed": 1.1,
+   "placement": {
+    "y": 700
+   }
+  }
+ ],
+ "runtime": {
+  "min": 66,
+  "max": 70
+ },
+ "runtime_s": 68.8,
+ "final": {
+  "url": "/api/vid/final/race-brenda7a_generated.mp4",
+  "poster": "/api/vid/final/race-brenda7a_generated.jpg",
+  "seconds": 68.8,
+  "usd": 63.68,
+  "at": "2026-09-27",
+  "models": "Seedance 2.5 face via treg (R1 30 s, Brenda 28 s, R2 20 s, ending 14 s, two 4 s inserts), ElevenLabs Music score, 16 HyperFrames graphics, outro v2",
+  "notes": "Final, approved. Version A: the spin at 23 s is replaced by a generated insert. Version B (alternate below) uses visor and cockpit cutaways instead; everything else is identical.",
+  "alt": [
+   {
+    "label": "Version B: cutaway fallback",
+    "url": "/api/vid/final/race-brenda7b_fallback.mp4",
+    "poster": "/api/vid/final/race-brenda7a_generated.jpg"
+   }
+  ],
+  "storyboard_page": "https://farooqchisty-hub.github.io/ad-intel-agent/storyboard-v7.html"
+ },
+ "hook": {
+  "formula": "in medias res",
+  "onscreen": "",
+  "frame1": "Onboard through Theo's visor at 300 km/h, sparks streaking, the lap tower on screen",
+  "spoken": "Lap forty-one, and Vance is hunting Castell!",
+  "why": "It opens mid-race at full speed, then the first radio call is about a candle shop's abandoned cart: stakes that don't match, which is the joke and the product."
+ },
+ "waivers": {
+  "dialogue_cap": "Denser dialogue approved by Farooq (27 Sep 2026); all 31 lines verified audible in order in the final transcript."
+ },
+ "outro_video": "/api/outro/outro_v2_9x16.mp4"
+}

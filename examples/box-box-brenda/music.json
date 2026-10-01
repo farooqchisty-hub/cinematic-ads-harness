@@ -1,0 +1,46 @@
+{
+ "common": "Original instrumental for a cinematic night motor-racing thriller commercial. No vocals, no singing, no spoken words. 128 bpm, D minor palette, analog synth bass, live drums, distorted guitar, tension strings. Starts instantly with no fade in.",
+ "sections": [
+  {
+   "name": "A",
+   "ms": 31000,
+   "prompt": " Section: suspense chase. From the first beat a driving pulsing synth-bass arpeggio and a ticking clock hi-hat, tense and sparse so dialogue sits on top. Builds every four bars with rising strings, low toms and filtered risers; short sharp dissonant stabs at about 0:03, 0:10 and 0:14. At 0:19 everything drops away to one held low drone and a slowing tick, getting quieter, fading to near silence by 0:23, then silence to the end."
+  },
+  {
+   "name": "B",
+   "ms": 21000,
+   "prompt": " Section: energetic sport-action drive. Opens on a massive drum and guitar slam at 0:00 at full energy, relentless driving drums and distorted guitar riff; a hopeful major-key synth lead motif enters at 0:04; a huge triumphant anthemic lift with a crash cymbal at 0:11, victory energy until 0:17, then it eases down to a lighter groove by 0:19."
+  },
+  {
+   "name": "C",
+   "ms": 21000,
+   "prompt": " Section: warm confident finale. A lighter, warm, upbeat groove in F major with a soft synth pulse, muted guitar and light drums, lots of space for speech, the hopeful motif played quietly; a gentle lift at 0:08; from 0:14 the motif grows into a bright, upbeat final sting that ends on a clean, punchy button hit at 0:19 with a short tail."
+  }
+ ],
+ "stitch": [
+  {
+   "name": "A",
+   "at": 0.0,
+   "trim": 29.3,
+   "fade_out": [
+    28.5,
+    0.8
+   ]
+  },
+  {
+   "name": "B",
+   "at": 28.45,
+   "fade_out": [
+    19.6,
+    0.6
+   ]
+  },
+  {
+   "name": "C",
+   "at": 48.85,
+   "fade_in": 0.6
+  }
+ ],
+ "total": 69.0,
+ "out": "music.wav"
+}

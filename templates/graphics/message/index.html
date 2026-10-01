@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>phone message</title><link rel="stylesheet" href="assets/base.css" /><script src="assets/gsap.min.js"></script><script src="cue.js"></script><script src="assets/boot.js"></script>
+<style>#ph{position:absolute;width:520px;height:900px;border-radius:70px;background:#0d0f10;padding:22px}
+#scr{width:100%;height:100%;border-radius:52px;background:#f2f2f6;overflow:hidden;position:relative}
+#hd{height:150px;background:#fff;display:flex;align-items:flex-end;gap:16px;padding:0 26px 18px;border-bottom:1px solid #e5e5ea}
+#av{width:64px;height:64px;border-radius:50%;background:var(--primary);overflow:hidden;display:flex;align-items:center;justify-content:center}#av img{max-width:48px;max-height:48px}
+#nm{font:600 28px var(--font-body);color:#111}.b{position:absolute;left:24px;max-width:400px;padding:20px 24px;border-radius:30px;background:#fff;font-size:26px;line-height:1.32;color:#111;box-shadow:0 2px 0 rgba(0,0,0,.05)}
+.b img{width:100%;border-radius:18px;margin-bottom:12px;display:block}#chip{position:absolute;left:-30px;bottom:150px;padding:16px 28px;border-radius:999px;background:var(--accent);color:var(--dark);font:800 34px/1 var(--font-head);letter-spacing:.03em;transform:rotate(-5deg);opacity:0}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-fps="30" data-width="1080" data-height="1920">
+<div id="stage" class="clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+<div id="ph" class="shadow"><div id="scr"><div id="hd"><div id="av"><img id="logo" /></div><div id="nm"></div></div><div class="b" id="b1"></div></div><div id="chip"></div></div>
+</div></div>
+<script src="assets/mg.js"></script>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = __DUR__, IN = T("in", 0.0), OUT = D - T("out_s", 0.35);
+const ph=document.getElementById("ph"); place(ph,{x:500,y:620});
+logo.src=T("icon","assets/logo.png"); nm.textContent=T("sender","");
+const b1=document.getElementById("b1"); b1.style.top="190px"; b1.innerHTML=(T("image",null)?'<img src="'+T("image")+'">':"")+T("text","");
+const chip=T("chip",null); if(chip) document.getElementById("chip").textContent=chip;
+tl.fromTo("#ph",{y:1300,rotation:8},{y:0,rotation:-2,duration:0.38,ease:"power3.out"},IN);
+tl.fromTo("#b1",{scale:.4,opacity:0,transformOrigin:"0% 0%"},{scale:1,opacity:1,duration:0.3,ease:"back.out(2.4)"},IN+T("pop",0.42));
+if(chip) tl.fromTo("#chip",{scale:2,opacity:0},{scale:1,opacity:1,duration:0.18,ease:"power3.in"},IN+T("chip_t",1.0));
+tl.to("#ph",{y:1400,rotation:6,duration:0.32,ease:"power3.in"},OUT);
+window.__timelines["main"] = tl;
+</script></body></html>

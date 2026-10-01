@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<title>brand outro</title><link rel="stylesheet" href="assets/base.css" /><script src="assets/gsap.min.js"></script><script src="cue.js"></script><script src="assets/boot.js"></script>
+<style>#bg{position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 30%,var(--primary),var(--dark))}
+#lg{position:absolute;left:50%;top:560px;transform:translateX(-50%);max-width:560px;max-height:260px}#hl{position:absolute;left:0;right:0;top:900px;text-align:center;color:#fff;font:800 120px/0.92 var(--font-head);text-transform:uppercase}
+#sub{position:absolute;left:0;right:0;top:1150px;text-align:center;color:rgba(255,255,255,.85);font:600 38px var(--font-body)}
+#bt{position:absolute;left:50%;top:1300px;transform:translateX(-50%);padding:26px 54px;border-radius:999px;background:var(--accent);color:var(--dark);font:800 46px/1 var(--font-head);white-space:nowrap}
+#card{position:absolute;left:50%;top:1450px;transform:translateX(-50%);max-width:760px;border-radius:24px}</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__DUR__" data-fps="30" data-width="1080" data-height="1920">
+<div id="stage" class="clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+<div id="bg"></div><img id="lg" /><div id="hl"></div><div id="sub"></div><div id="bt"></div><img id="card" />
+</div></div>
+<script src="assets/mg.js"></script>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = __DUR__, IN = T("in", 0.0), OUT = D - T("out_s", 0.35);
+lg.src=T("logo","assets/logo.png"); hl.innerHTML=T("headline","").replace(/\n/g,"<br>"); sub.textContent=T("sub",""); bt.textContent=T("button","");
+const cd=T("card_image",null); if(cd) card.src=cd; else card.style.display="none";
+tl.fromTo("#bg",{opacity:0},{opacity:1,duration:0.25},0);
+tl.fromTo("#lg",{scale:.3,opacity:0},{scale:1,opacity:1,duration:0.4,ease:"back.out(2.2)"},0.15);
+tl.fromTo("#hl",{y:80,opacity:0},{y:0,opacity:1,duration:0.3,ease:"power3.out"},0.55);
+tl.fromTo("#sub",{opacity:0},{opacity:1,duration:0.25},0.8);
+tl.fromTo("#bt",{scale:.5,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(2.5)"},1.05);
+if(cd) tl.fromTo("#card",{y:120,opacity:0},{y:0,opacity:1,duration:0.3,ease:"power3.out"},1.3);
+tl.fromTo("#bt",{scale:1},{keyframes:[{scale:1.07,duration:0.12},{scale:1,duration:0.3}]},2.2);
+window.__timelines["main"] = tl;
+</script></body></html>
