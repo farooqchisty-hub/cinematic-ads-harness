@@ -47,4 +47,4 @@ About $30 to $65 of video generation per finished 60 to 70 s ad, plus $5 to $8 f
 
 ## Where to look
 `README.md` for the commands, `SKILL.md` for the agent's workflow, `references/` for the principles,
-prompting, schemas, QA, costs and traps, and `examples/box-box-brenda/` for the worked example (internal; don't share outside Brevo).
+prompting, schemas, QA, costs and traps, and `examples/box-box-brenda/` for the worked example.
